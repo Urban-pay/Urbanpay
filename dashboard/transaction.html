@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UrbanPay:dashboard</title>
+    <link rel="stylesheet" href="../assets/bootstrap5.2/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/custom/css/style.css" />
+    <link rel="stylesheet" href="../assets/tailwind/tailwind.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/URBAN PAY LOGO PNG.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="">
+    <div
+      class="container flex items-center justify-center h-screen text-center"
+      style="height: 100vh"
+    >
+      <div class="p-3" style="height: 100%; width: 400px">
+        <div class="">
+          <div class="flex justify-between pt-3 mb-3">
+            <div class="">
+              <h1 class="w-full my-2 text-2xl font-extrabold">Transactions</h1>
+            </div>
+            <div class="flex space-x-2">
+              <div class="dropdown open">
+                <svg
+                  id="triggerId"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  viewBox="0 0 35 35"
+                  fill="none"
+                >
+                  <circle cx="17.5" cy="17.5" r="17.5" fill="#F5F0FF" />
+                  <path
+                    d="M28 22V12C28 11.4696 27.7893 10.9609 27.4142 10.5858C27.0391 10.2107 26.5304 10 26 10H12C11.4696 10 10.9609 10.2107 10.5858 10.5858C10.2107 10.9609 10 11.4696 10 12V26C10 26.5304 10.2107 27.0391 10.5858 27.4142C10.9609 27.7893 11.4696 28 12 28H22M28 22V22.172C27.9999 22.7024 27.7891 23.211 27.414 23.586L23.586 27.414C23.211 27.7891 22.7024 27.9999 22.172 28H22M28 22H24C23.4696 22 22.9609 22.2107 22.5858 22.5858C22.2107 22.9609 22 23.4696 22 24V28M14 14H24M14 18H24M14 22H18"
+                    stroke="#222222"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                  <h6 class="font-bold dropdown-header">All Transactions</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item disabled" href="#">Sent</a>
+                  <a class="dropdown-item disabled" href="#">Recieved</a>
+                </div>
+              </div>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+              >
+                <circle cx="17.5" cy="17.5" r="17.5" fill="#F5F0FF" />
+                <g clip-path="url(#clip0_3660_20998)">
+                  <path
+                    d="M10.7916 8.66797H18.2082C18.8249 8.66797 19.3332 9.1763 19.3332 9.79297V11.0263C19.3332 11.4763 19.0499 12.0346 18.7749 12.318L16.3582 14.4513C16.0249 14.7346 15.7999 15.293 15.7999 15.743V18.1596C15.7999 18.493 15.5749 18.943 15.2916 19.118L14.5082 19.6263C13.7749 20.0763 12.7666 19.568 12.7666 18.668V15.693C12.7666 15.3013 12.5416 14.793 12.3166 14.5096L10.1832 12.2596C9.89991 11.9763 9.67491 11.4763 9.67491 11.1346V9.84297C9.66657 9.1763 10.1749 8.66797 10.7916 8.66797Z"
+                    stroke="black"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.6665 17.0005V19.5005C9.6665 23.6672 11.3332 25.3339 15.4998 25.3339H20.4998C24.6665 25.3339 26.3332 23.6672 26.3332 19.5005V14.5005C26.3332 11.9005 25.6832 10.2672 24.1748 9.41719C23.7498 9.17552 22.8998 8.99219 22.1248 8.86719M18.8332 17.8339H22.9998M17.1665 21.1672H22.9998"
+                    stroke="black"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_3660_20998">
+                    <rect
+                      width="20"
+                      height="20"
+                      fill="white"
+                      transform="translate(8 7)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+
+          <!-- <div class="space-y-6">
+            <div class="flex justify-between">
+              <div class="flex items-center justify-center mr-1 text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <circle cx="10" cy="10" r="10" fill="#FFD4D4" />
+                  <circle cx="10" cy="10" r="5" fill="#FC8A8A" />
+                </svg>
+              </div>
+              <div class="flex justify-between w-full mt-2">
+                <div>
+                  <h1
+                    class="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
+                  >
+                    Segun Osei
+                  </h1>
+                  <span>Sent to Ecobank</span>
+                </div>
+                <a
+                  href="javascrip:void()"
+                  class="justify-center mt-2 text-center text-decoration-none align-center d-flex"
+                  >-50,000
+                </a>
+              </div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex items-center justify-center mr-1 text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <circle cx="5" cy="5" r="5" fill="#69E99C" />
+                </svg>
+              </div>
+              <div class="flex justify-between w-full mt-2">
+                <div>
+                  <h1
+                    class="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
+                  >
+                    Segun Osei
+                  </h1>
+                  <span>Sent to Ecobank</span>
+                </div>
+                <a
+                  href="javascrip:void()"
+                  class="justify-center mt-2 text-center text-decoration-none align-center d-flex"
+                  >+50,000
+                </a>
+              </div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex items-center justify-center mr-1 text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <circle cx="10" cy="10" r="10" fill="#FFD4D4" />
+                  <circle cx="10" cy="10" r="5" fill="#FC8A8A" />
+                </svg>
+              </div>
+              <div class="flex justify-between w-full mt-2">
+                <div>
+                  <h1
+                    class="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
+                  >
+                    Segun Osei
+                  </h1>
+                  <span>Sent to Ecobank</span>
+                </div>
+                <a
+                  href="javascrip:void()"
+                  class="justify-center mt-2 text-center text-decoration-none align-center d-flex"
+                  >-50,000
+                </a>
+              </div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex items-center justify-center mr-1 text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <circle cx="5" cy="5" r="5" fill="#69E99C" />
+                </svg>
+              </div>
+              <div class="flex justify-between w-full mt-2">
+                <div>
+                  <h1
+                    class="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
+                  >
+                    Segun Osei
+                  </h1>
+                  <span>Sent to Ecobank</span>
+                </div>
+                <a
+                  href="javascrip:void()"
+                  class="justify-center mt-2 text-center text-decoration-none align-center d-flex"
+                  >+50,000
+                </a>
+              </div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex items-center justify-center mr-1 text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <circle cx="10" cy="10" r="10" fill="#FFD4D4" />
+                  <circle cx="10" cy="10" r="5" fill="#FC8A8A" />
+                </svg>
+              </div>
+              <div class="flex justify-between w-full mt-2">
+                <div>
+                  <h1
+                    class="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
+                  >
+                    Segun Osei
+                  </h1>
+                  <span>Sent to Ecobank</span>
+                </div>
+                <a
+                  href="javascrip:void()"
+                  class="justify-center mt-2 text-center text-decoration-none align-center d-flex"
+                  >-50,000
+                </a>
+              </div>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex items-center justify-center mr-1 text-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <circle cx="5" cy="5" r="5" fill="#69E99C" />
+                </svg>
+              </div>
+              <div class="flex justify-between w-full mt-2">
+                <div>
+                  <h1
+                    class="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
+                  >
+                    Segun Osei
+                  </h1>
+                  <span>Sent to Ecobank</span>
+                </div>
+                <a
+                  href="javascrip:void()"
+                  class="justify-center mt-2 text-center text-decoration-none align-center d-flex"
+                  >+50,000
+                </a>
+              </div>
+            </div>
+          </div> -->
+          <div class="flex items-center justify-center space-y-6 text-center" style="height: 75vh;">
+            <div class="">
+              <div class="flex items-center justify-center mr-1 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="108" height="112" viewBox="0 0 108 112" fill="none">
+                    <circle cx="6.5" cy="6" r="6" fill="#D9D9D9"/>
+                    <rect x="17.5" width="90" height="12" rx="6" fill="#D9D9D9"/>
+                    <circle cx="6.5" cy="26" r="6" fill="#D9D9D9"/>
+                    <rect x="17.5" y="20" width="90" height="12" rx="6" fill="#D9D9D9"/>
+                    <circle cx="6.5" cy="46" r="6" fill="#D9D9D9"/>
+                    <rect x="17.5" y="40" width="90" height="12" rx="6" fill="#D9D9D9"/>
+                    <circle cx="6.5" cy="66" r="6" fill="#D9D9D9"/>
+                    <rect x="17.5" y="60" width="90" height="12" rx="6" fill="#D9D9D9"/>
+                    <circle cx="6.5" cy="86" r="6" fill="#D9D9D9"/>
+                    <rect x="17.5" y="80" width="90" height="12" rx="6" fill="#D9D9D9"/>
+                    <circle cx="6.5" cy="106" r="6" fill="#D9D9D9"/>
+                    <rect x="17.5" y="100" width="90" height="12" rx="6" fill="#D9D9D9"/>
+                    </svg>
+              </div>
+              <div class="flex justify-between w-full mt-2">
+                <p>Your transactions will show here after activity</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="w-full sticky bottom-0">
+          <div class="flex justify-between py-4">
+            <div class="navigation-menu-home">
+              <!-- <img class="img-2" src="img/home.svg" /> -->
+              <a href="home.html">
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.02 3.33821L3.63 7.53821C2.73 8.23821 2 9.72821 2 10.8582V18.2682C2 20.5882 3.89 22.4882 6.21 22.4882H17.79C20.11 22.4882 22 20.5882 22 18.2782V10.9982C22 9.78821 21.19 8.23821 20.2 7.54821L14.02 3.21821C12.62 2.23821 10.37 2.28821 9.02 3.33821Z"
+                    stroke="#606060"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 18.4883V15.4883"
+                    stroke="#606060"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+  
+              <!-- <div class="text-wrapper-7">Home</div> -->
+            </div>
+            <div class="img-wrapper">
+              <!-- <img class="img-2" src="img/card.svg" /> -->
+              <a href="card.html">
+                <svg
+                  class="img-2"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.5 9.00586H22.5M6.5 17.0059H8.5M11 17.0059H15"
+                    stroke="#606060"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.94 4.00586H18.05C21.61 4.00586 22.5 4.88586 22.5 8.39586V16.6059C22.5 20.1159 21.61 20.9959 18.06 20.9959H6.94C3.39 21.0059 2.5 20.1259 2.5 16.6159V8.39586C2.5 4.88586 3.39 4.00586 6.94 4.00586Z"
+                    stroke="#606060"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="img-wrapper">
+              <!-- <img class="img-2" src="img/analysis.svg" /> -->
+              <a href="transaction.html">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.6702 7.44942C21.0302 5.27942 19.2202 3.46942 17.0502 2.82942C15.4002 2.34942 14.2602 2.38942 13.4702 2.97942C12.5202 3.68942 12.4102 4.96942 12.4102 5.87942V8.36942C12.4102 10.8294 13.5302 12.0794 15.7302 12.0794H18.6002C19.5002 12.0794 20.7902 11.9694 21.5002 11.0194C22.1102 10.2394 22.1602 9.09942 21.6702 7.44942Z" fill="#632FD9"/>
+                    <path d="M18.9099 13.8611C18.6499 13.5611 18.2699 13.3911 17.8799 13.3911H14.2999C12.5399 13.3911 11.1099 11.9611 11.1099 10.2011V6.62113C11.1099 6.23113 10.9399 5.85113 10.6399 5.59113C10.3499 5.33113 9.9499 5.21113 9.5699 5.26113C7.2199 5.56113 5.0599 6.85113 3.6499 8.79113C2.2299 10.7411 1.7099 13.1211 2.1599 15.5011C2.8099 18.9411 5.5599 21.6911 9.0099 22.3411C9.5599 22.4511 10.1099 22.5011 10.6599 22.5011C12.4699 22.5011 14.2199 21.9411 15.7099 20.8511C17.6499 19.4411 18.9399 17.2811 19.2399 14.9311C19.2899 14.5411 19.1699 14.1511 18.9099 13.8611Z" fill="#632FD9"/>
+                    </svg>
+                    
+              </a>
+            </div>
+            <div class="iconsax-linear-wrapper">
+              <!-- <img class="img-2" src="img/setting-2.svg" /> -->
+              <a href="settings.html">
+                <svg
+                  class="img-2"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 15.5C13.2956 15.5 14.0587 15.1839 14.6213 14.6213C15.1839 14.0587 15.5 13.2956 15.5 12.5C15.5 11.7044 15.1839 10.9413 14.6213 10.3787C14.0587 9.81607 13.2956 9.5 12.5 9.5C11.7044 9.5 10.9413 9.81607 10.3787 10.3787C9.81607 10.9413 9.5 11.7044 9.5 12.5C9.5 13.2956 9.81607 14.0587 10.3787 14.6213C10.9413 15.1839 11.7044 15.5 12.5 15.5Z"
+                    stroke="#606060"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M2.5 13.3794V11.6194C2.5 10.5794 3.35 9.71945 4.4 9.71945C6.21 9.71945 6.95 8.43945 6.04 6.86945C5.52 5.96945 5.83 4.79945 6.74 4.27945L8.47 3.28945C9.26 2.81945 10.28 3.09945 10.75 3.88945L10.86 4.07945C11.76 5.64945 13.24 5.64945 14.15 4.07945L14.26 3.88945C14.73 3.09945 15.75 2.81945 16.54 3.28945L18.27 4.27945C19.18 4.79945 19.49 5.96945 18.97 6.86945C18.06 8.43945 18.8 9.71945 20.61 9.71945C21.65 9.71945 22.51 10.5694 22.51 11.6194V13.3794C22.51 14.4194 21.66 15.2794 20.61 15.2794C18.8 15.2794 18.06 16.5594 18.97 18.1294C19.49 19.0394 19.18 20.1994 18.27 20.7194L16.54 21.7094C15.75 22.1794 14.73 21.8994 14.26 21.1094L14.15 20.9194C13.25 19.3494 11.77 19.3494 10.86 20.9194L10.75 21.1094C10.28 21.8994 9.26 22.1794 8.47 21.7094L6.74 20.7194C6.3041 20.4685 5.98558 20.0548 5.85435 19.5692C5.72311 19.0836 5.78988 18.5658 6.04 18.1294C6.95 16.5594 6.21 15.2794 4.4 15.2794C3.35 15.2794 2.5 14.4194 2.5 13.3794Z"
+                    stroke="#606060"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+               
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Your content goes here -->
+    </div>
+
+    <script src="../assets/bootstrap5.2/bootstrap.bundle.min.js"></script>
+    <script src="../assets/bootstrap5.2/jquery.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UrbanPay:dashboard</title>
+    <link rel="stylesheet" href="../assets/bootstrap5.2/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/custom/css/style.css" />
+    <link rel="stylesheet" href="../assets/tailwind/tailwind.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/URBAN PAY LOGO PNG.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="bg-white">
+    <div
+      class="container flex justify-center items-center text-center h-screen"
+      style="height: 100vh"
+    >
+      <div class="p-3" style="height: 100%; width: 350px">
+        <div class="">
+          <div class="mb-12 pt-12">
+            <div class="w-full flex justify-center items-center">
+              <img src="../media/dashoard/Display picture.jpg" alt="" />
+            </div>
+            <h1 class="text-3xl font-semibold text-color">Welcome back John</h1>
+            <p class="text-sm">Please put in your four digit pin below</p>
+          </div>
+
+          <form class="space-y-6" action="#" method="POST" id="signin">
+            <!-- <div> -->
+              <!-- <label
+                for="email"
+                class="block text-sm text-left font-medium leading-6 text-gray-900"
+                >Email address</label
+              >
+              <div class="mt-2">
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  placeholder=""
+                  class="form-control   w-full rounded-md borderpy-1.5 text-gray-900 shadow-sm  placeholder:text-gray-400  sm:text-sm sm:leading-6"
+                />
+              </div> -->
+              <div class="flex items-center space-x-4">
+                <input
+                  type="text"
+                  id="pin1"
+                  maxlength="1"
+                  class="w-12 h-12 border border-gray-300 rounded text-2xl text-center focus:outline-none"
+                  readonly
+                />
+                <input
+                  type="text"
+                  id="pin2"
+                  maxlength="1"
+                  class="w-12 h-12 border border-gray-300 rounded text-2xl text-center focus:outline-none"
+                  readonly
+                />
+                <input
+                  type="text"
+                  id="pin3"
+                  maxlength="1"
+                  class="w-12 h-12 border border-gray-300 rounded text-2xl text-center focus:outline-none"
+                  readonly
+                />
+                <input
+                  type="text"
+                  id="pin4"
+                  maxlength="1"
+                  class="w-12 h-12 border border-gray-300 rounded text-2xl text-center focus:outline-none"
+                  readonly
+                />
+                <input
+                  type="text"
+                  id="pin5"
+                  maxlength="1"
+                  class="w-12 h-12 border border-gray-300 rounded text-2xl text-center focus:outline-none"
+                  readonly
+                />
+              </div>
+              <div class="flex items-center justify-between mt-3">
+                <label
+                  for="password"
+                  class="block text-sm font-medium leading-6 text-gray-900"
+                ></label>
+                <div class="text-sm">
+                  <a
+                    href="forgot-password.html"
+                    class="font-semibold text-indigo-600 hover:text-indigo-500"
+                    >Forgot pin?</a
+                  >
+                </div>
+              </div>
+
+              <div class="grid grid-cols-3 gap-4 mt-4">
+                <button type="button"
+                  class="w-full p-2 border rounded-md text-center text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring focus:border-blue-300"
+                  onclick="appendToPin(1)"
+                >
+                  1
+                </button>
+                <button type="button"
+                  class="w-full p-2 border rounded-md text-center text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring focus:border-blue-300"
+                  onclick="appendToPin(2)"
+                >
+                  2
+                </button>
+                <button type="button"
+                  class="w-full p-2 border rounded-md text-center text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring focus:border-blue-300"
+                  onclick="appendToPin(3)"
+                >
+                  3
+                </button>
+                <button type="button"
+                  class="w-full p-2 border rounded-md text-center text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring focus:border-blue-300"
+                  onclick="appendToPin(4)"
+                >
+                  4
+                </button>
+                <button type="button"
+                  class="w-full p-2 border rounded-md text-center text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring focus:border-blue-300"
+                  onclick="appendToPin(5)"
+                >
+                  5
+                </button>
+                <button type="button"
+                  class="w-full p-2 border rounded-md text-center text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring focus:border-blue-300"
+                  onclick="appendToPin(6)"
+                >
+                  6
+                </button>
+                <button type="button"
+                  class="w-full p-2 border rounded-md text-center text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring focus:border-blue-300"
+                  onclick="appendToPin(7)"
+                >
+                  7
+                </button>
+                <button type="button"
+                  class="w-full p-2 border rounded-md text-center text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring focus:border-blue-300"
+                  onclick="appendToPin(8)"
+                >
+                  8
+                </button>
+                <button type="button"
+                  class="w-full p-2 border rounded-md text-center text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring focus:border-blue-300"
+                  onclick="appendToPin(9)"
+                >
+                  9
+                </button>
+                <button type="button"
+                  class="w-full p-2 border rounded-md text-center text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring focus:border-blue-300"
+                  onclick="appendToPin(0)"
+                >
+                  0
+                </button>
+                <button type="button" class="w-full p-2 border rounded-md text-center justify-center items-center text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring focus:border-blue-300 flex justify-content items-center text-center" onclick="deleteLastDigit()">                 <img src="../media/dashoard/lucide_delete.png" class="img-fluid" /> 
+                </button>
+              </div>
+
+              <!-- <div>
+              <button
+                type="submit"
+                class="flex w-full gray-btn justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+              Continue
+              </button>
+              <p class="mt-10 text-center text-sm text-gray-500">
+                Didn't recieve a code? 
+                <a href="create-account.html" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500 text-grayy" >Resend</a>
+              </p>
+            </div> -->
+            <!-- </div> -->
+          </form>
+        </div>
+      </div>
+      <!-- Your content goes here -->
+    </div>
+
+    <script src="../assets/bootstrap5.2/bootstrap.bundle.min.js"></script>
+    <script src="../assets/bootstrap5.2/jquery.min.js"></script>
+    <script>
+        $('#signin').preventDefault();
+      function appendToPin(number) {
+        const pinInput1 = document.getElementById("pin1");
+        const pinInput2 = document.getElementById("pin2");
+        const pinInput3 = document.getElementById("pin3");
+        const pinInput4 = document.getElementById("pin4");
+        const pinInput5 = document.getElementById("pin5");
+
+        if (pinInput1.value === "") {
+          pinInput1.value = number;
+        } else if (pinInput2.value === "") {
+          pinInput2.value = number;
+        } else if (pinInput3.value === "") {
+          pinInput3.value = number;
+        } else if (pinInput4.value === "") {
+          pinInput4.value = number;
+        }else if (pinInput5.value === "") {
+            pinInput5.value = number;
+            window.location.href = 'home.html'
+          // You can add additional logic here for PIN verification
+          // For example, you might want to trigger an action when all four digits are entered.
+        }
+      }
+
+    function deleteLastDigit() {
+        const pinInput5 = document.getElementById("pin5");
+      const pinInput4 = document.getElementById('pin4');
+      const pinInput3 = document.getElementById('pin3');
+      const pinInput2 = document.getElementById('pin2');
+      const pinInput1 = document.getElementById('pin1');
+
+      if (pinInput5.value !== '') {
+        pinInput5.value = '';
+      } else if (pinInput4.value !== '') {
+        pinInput4.value = '';
+      } else if (pinInput3.value !== '') {
+        pinInput3.value = '';
+      } else if (pinInput2.value !== '') {
+        pinInput2.value = '';
+      } else if (pinInput1.value !== '') {
+        pinInput1.value = '';
+      }
+    }
+    </script>
+  </body>
+</html>

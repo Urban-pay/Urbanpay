@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UrbanPay:dashboard</title>
+    <link rel="stylesheet" href="../assets/bootstrap5.2/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/custom/css/style.css" />
+    <link rel="stylesheet" href="../assets/tailwind/tailwind.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/URBAN PAY LOGO PNG.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="">
+    <div
+      class="container flex justify-center items-center text-center h-screen"
+      style="height: 100vh"
+    >
+      <div class="p-3" style="height: 100%; width: 350px">
+        <div class="">
+          <div class="flex justify-start items-start text-start mt-3">
+            <svg
+              width="16"
+              class="cursor-pointer"
+              id="back"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536Z"
+                fill="#632FD9"
+              />
+            </svg>
+          </div>
+          <div class="mb-12 pt-12">
+            <h1 class="text-3xl font-semibold text-color">
+              Pin code verification
+            </h1>
+            <p class="text-sm">
+              Enter the code sent to your email or phone number
+            </p>
+          </div>
+
+          <form class="space-y-6" action="#" method="POST">
+            <div>
+              <!-- <label
+                for="email"
+                class="block text-sm text-left font-medium leading-6 text-gray-900"
+                >Email address</label
+              >
+              <div class="mt-2">
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  placeholder=""
+                  class="form-control   w-full rounded-md borderpy-1.5 text-gray-900 shadow-sm  placeholder:text-gray-400  sm:text-sm sm:leading-6"
+                />
+              </div> -->
+              <div
+                class="flex items-center justify-center text-center space-x-4"
+              >
+                <input
+                  required
+                  type="text"
+                  id="code"
+                  name="code"
+                  maxlength="1"
+                  class="w-12 h-12 border border-gray-300 rounded text-2xl text-center focus:outline-none"
+                />
+                <input
+                  required
+                  type="text"
+                  id="code"
+                  name="code"
+                  maxlength="1"
+                  class="w-12 h-12 border border-gray-300 rounded text-2xl text-center focus:outline-none"
+                />
+                <input
+                  required
+                  type="text"
+                  id="code"
+                  name="code"
+                  maxlength="1"
+                  class="w-12 h-12 border border-gray-300 rounded text-2xl text-center focus:outline-none"
+                />
+                <input
+                  required
+                  type="text"
+                  id="code"
+                  name="code"
+                  maxlength="1"
+                  class="w-12 h-12 border border-gray-300 rounded text-2xl text-center focus:outline-none"
+                />
+                <input
+                  required
+                  type="text "
+                  id="code"
+                  name="code"
+                  maxlength="1"
+                  class="w-12 h-12 border border-gray-300 rounded text-2xl text-center focus:outline-none"
+                />
+              </div>
+            </div>
+
+            <div>
+              <button
+                type="submit"
+                class="flex w-full gray-btn justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                <!-- Continue -->
+                <a
+                  href="signin.html"
+                  class="font-semibold leading-6 text-white"
+                >
+                  Continue</a
+                >
+              </button>
+              <p class="mt-10 text-center text-sm text-gray-500">
+                Didn't recieve a code?
+                <a
+                  href="create-account.html"
+                  class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500 text-grayy"
+                  >Resend</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Your content goes here -->
+    </div>
+
+    <script src="../assets/bootstrap5.2/bootstrap.bundle.min.js"></script>
+    <script src="../assets/bootstrap5.2/jquery.min.js"></script>
+    <script>
+      $("#back").click(function (e) {
+        e.preventDefault();
+        window.history.back();
+      });
+    </script>
+  </body>
+</html>
