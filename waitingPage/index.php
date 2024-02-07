@@ -1,3 +1,45 @@
+<?php
+   $dbhost = 'localhost';
+   $dbuser = 'root';
+ $dbpass = '';
+ $dbname = 'urbanpay';
+ $conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+  if (isset($_POST['waitlistBtn'])) {
+    # code...
+    $email = $_POST['email'];
+    $user_id = rand(100, 10000000);
+    $sql = 'INSERT INTO waitlist (user_id, email) VALUES ("$user_id", "$email")';
+    $result = mysqli_query($conn, $sql);
+    if ($result) {
+      echo'
+      <div class="flex justify-end items-end text-end w-full mt-2">
+        <div id="toast-success" class="flex items-center w-25  p-4 mb-4 text-gray-500 bg-white rounded-lg shadow " role="alert">
+            <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-800 dark:text-green-200">
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+              </svg>
+              <span class="sr-only">Check icon</span>
+          </div>
+          <div class="ms-3 text-lg font-bold">Added successfully to waitlist.</div>
+            <button type="button" class="ms-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 dark:text-gray-500 dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700" data-dismiss-target="#toast-success" aria-label="Close">
+                <span class="sr-only">Close</span>
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      ';
+
+
+
+
+
+    }
+  }
+ ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -115,12 +157,13 @@
             </p>
           </div>
 
-          <form class="mt-14">
+          <form class="mt-14" method="post" id="waitlist">
             <div class="row">
               <div class="col-md-8 mt-2">
                 <input
                   type="email"
-                  id="first_name"
+                  id="email"
+                  name="email"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Enter your Email Address here"
                   required
@@ -128,8 +171,9 @@
               </div>
               <div class="col-md-4 mt-2">
                 <button
-                  type="button"
-                  onclick="changeColor()"
+                  type="submit"
+                  id="waitlistBtn"
+                  name="waitlistBtn"
                   class="text-white custom-bg focus:ring-4 focus:ring-blue-300 font-small rounded text-xs p-1 py-3 me-2 mb-2 w-75 focus:outline-none dark:focus:ring-blue-800"
                 >
                   Get Early Access
@@ -215,7 +259,7 @@
 
     <script src="../assets/bootstrap5.2/jquery.min.js"></script>
     <script src="../assets/bootstrap5.2/bootstrap.bundle.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
 
     <script>
       const myModal = new bootstrap.Modal(document.getElementById("modalId"));
@@ -234,11 +278,17 @@
         // Alert the user
         alert("Link copied to clipboard: " + linkInput.value);
       }
-      //       function(){
-      //   const button=document.getElementsByTagName('button')
-      //   const currentColor=button.style.backgroundColor;
-      //   const newColor=(currentColor= '')? '' : '';
-      //   button.style.backgroundColor=newColor;}
+      // $('#waitlistBtn').click(function (e) { 
+      //   e.preventDefault();
+      //   $.ajax({
+      //     type: "post",
+      //     url: "index.php",
+      //     data: $("#waitlist").serialize() + '&action=waitlist' ,
+      //     success: function (response) {
+      //       console.log
+      //     }
+      //   });
+      // });
     </script>
   </body>
 </html>
