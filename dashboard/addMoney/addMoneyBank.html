@@ -21,8 +21,8 @@
       <div class="p-3" style="height: 100%; width: 400px">
         <div class="">
           <div class="flex justify-start pt-12 mb-12">
-            <div class="flex justify-start items-start text-start mt-3">
-              <a href="../home.html">
+            <div class="flex items-start justify-start mt-3 text-start">
+              <a href="../home.html" id="back">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -39,8 +39,8 @@
                 </svg>
               </a>
             </div>
-            <div class="w-full flex justify-center text-center items-center">
-              <h1 class="w-full my-2 font-bold text-2xl">Bank Transfer</h1>
+            <div class="flex items-center justify-center w-full text-center">
+              <h1 class="w-full my-2 text-2xl font-bold">Bank Transfer</h1>
             </div>
           </div>
           <div class="my-10">
@@ -86,7 +86,7 @@
               </svg>
               <div class="flex justify-between w-full mt-2">
                 <div class="ml-2">
-                  <h1 class="ml-2 text-1xl font-bold text-start">Bank</h1>
+                  <h1 class="ml-2 font-bold text-1xl text-start">Bank</h1>
                   <p class="ml-2 text-sm text-start">Urban Pay</p>
                 </div>
               </div>
@@ -115,15 +115,16 @@
               </svg>
               <div class="flex justify-between w-full mt-2">
                 <div class="ml-2">
-                  <h1 class="ml-2 text-1xl font-bold text-start">
-                    Urban Pay account nuber
+                  <h1 class="ml-2 font-bold text-1xl text-start">
+                    Urban Pay account number
                   </h1>
-                  <p class="ml-2 text-sm text-start">1234567891</p>
+                  <input class="inline p-0 text-sm border-0 text-start focus:outline-none" id="acct" value="1234567891" readonly>
                 </div>
 
                 <a
-                  href="addMoneyBankCard.html"
+                  href="javascript:void()"
                   id="copy"
+                  onclick="copyLink()"
                   class="justify-center mt-2 text-center text-decoration-none align-center d-flex"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -167,12 +168,15 @@
               </svg>
               <div class="flex justify-between w-full mt-2">
                 <div class="ml-2">
-                  <h1 class="ml-2 text-1xl font-bold text-start">
+                  <h1 class="ml-2 font-bold text-1xl text-start">
                     Account name
                   </h1>
                   <p class="ml-2 text-sm text-start">James Peters Emmanuel</p>
                 </div>
               </div>
+            </div>
+            <div class="w-full my-7">
+                <button class="text-white card-btn focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Share   </button>
             </div>
           </div>
         </div>
@@ -183,10 +187,33 @@
     <script src="../../assets/bootstrap5.2/bootstrap.bundle.min.js"></script>
     <script src="../../assets/bootstrap5.2/jquery.min.js"></script>
     <script>
-      $("#copy").click(function (e) {
+          $("#back").click(function (e) {
         e.preventDefault();
-        
+        window.history.back();
       });
+        function copyLink() {
+        // Get the input element containing the link
+        var linkInput = document.getElementById("acct");
+
+        // Select the text in the input element
+        linkInput.select();
+        linkInput.setSelectionRange(0, 99999); /* For mobile devices */
+
+        // Copy the selected text to the clipboard
+        document.execCommand("copy");
+
+        // Alert the user
+        alert("Link copied to clipboard: " + linkInput.value);
+      }
+    //   $("#copy").click(function (e) {
+    //     e.preventDefault();
+    //     acct = document.getElementById('acct')
+    //     acct.select()
+    //     acct.setSelectionRange(0, 99999)
+    //     if (document.execCommand('copy')) {
+    //         alert('account number copied:  ' + $('#acct').text())
+    //     }
+    //   });
     </script>
   </body>
 </html>
