@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UrbanPay:dashboard</title>
+    <link rel="stylesheet" href="../../assets/bootstrap5.2/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../assets/custom/css/style.css" />
+    <link rel="stylesheet" href="../../assets/tailwind/tailwind.css" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/img/URBAN PAY LOGO PNG.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="">
+    <div
+      class="container flex items-center justify-center h-screen text-center"
+      style="height: 100vh"
+    >
+      <div class="p-3" style="height: 100%; width: 400px">
+        <div class="">
+          <div class="flex justify-start pt-12 mb-12">
+            <div class="flex justify-start items-start text-start mt-3">
+              <a href="../home.html" id="back">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="w-full flex justify-center text-center items-center">
+              <div>
+                <h1 class="w-full my-2 font-bold text-2xl">Scan QR Code</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-6">
+            <div class="p-3 rounded-lg m-3" style="background-color: #F6E9FE;">
+                <p class="mb-3 text-sm text-gray-400">
+                    Tap the button below to scan and send
+                  </p>
+                <div class="my-4 text-start flex justify-center align-items">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="200"
+                      height="200"
+                      viewBox="0 0 200 200"
+                      fill="none"
+                    >
+                      <path
+                        d="M111.111 200V177.778H133.333V200H111.111ZM88.8889 177.778V122.222H111.111V177.778H88.8889ZM177.778 144.444V100H200V144.444H177.778ZM155.556 100V77.7778H177.778V100H155.556ZM22.2222 122.222V100H44.4444V122.222H22.2222ZM0 100V77.7778H22.2222V100H0ZM100 22.2222V0H122.222V22.2222H100ZM13.8889 52.7778H52.7778V13.8889H13.8889V52.7778ZM0 66.6667V0H66.6667V66.6667H0ZM13.8889 186.111H52.7778V147.222H13.8889V186.111ZM0 200V133.333H66.6667V200H0ZM147.222 52.7778H186.111V13.8889H147.222V52.7778ZM133.333 66.6667V0H200V66.6667H133.333ZM155.556 200V166.667H133.333V144.444H177.778V177.778H200V200H155.556ZM111.111 122.222V100H155.556V122.222H111.111ZM66.6667 122.222V100H44.4444V77.7778H111.111V100H88.8889V122.222H66.6667ZM77.7778 66.6667V22.2222H100V44.4444H122.222V66.6667H77.7778ZM25 41.6667V25H41.6667V41.6667H25ZM25 175V158.333H41.6667V175H25ZM158.333 41.6667V25H175V41.6667H158.333Z"
+                        fill="black"
+                      />
+                    </svg>
+                </div>
+            </div>
+
+
+            <!-- <div>
+              <button
+                type="submit"
+                class="text-white card-btn focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                <a
+                  href="sendToUrbanPayTag.html"
+                  class="text-white decoration-none text-capitalize"
+                >
+                  Send money
+                </a>
+              </button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- Your content goes here -->
+    </div>
+
+    <script src="../../assets/bootstrap5.2/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/bootstrap5.2/jquery.min.js"></script>
+    <script>
+      $("#back").click(function (e) {
+        e.preventDefault();
+        window.history.back();
+      });
+    </script>
+  </body>
+</html>
