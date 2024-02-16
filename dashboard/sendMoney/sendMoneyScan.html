@@ -106,7 +106,14 @@
     <script>
         $("#back").click(function (e) {
           e.preventDefault();
+          
+        if (window.history && window.history.length > 1) {
+          
           window.history.back();
+        } else {
+          location.href = 'sendMoneyTab.html'
+        }
+
         });
       </script>
   </body>

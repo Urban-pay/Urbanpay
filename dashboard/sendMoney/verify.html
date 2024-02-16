@@ -282,7 +282,14 @@
     <script>
       $("#back").click(function (e) {
         e.preventDefault();
-        window.history.back();
+        
+        if (window.history && window.history.length > 1) {
+          
+          window.history.back();
+        } else {
+          location.href = 'sendMoneyTab.html'
+        }
+
       });
     </script>
   </body>
