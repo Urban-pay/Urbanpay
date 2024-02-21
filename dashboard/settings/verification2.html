@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UrbanPay:dashboard</title>
+    <link rel="stylesheet" href="../../assets/bootstrap5.2/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../assets/custom/css/style.css" />
+    <link rel="stylesheet" href="../../assets/tailwind/tailwind.css" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/img/URBAN PAY LOGO PNG.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="">
+    <div
+      class="container flex items-center justify-center h-screen text-center"
+      style="height: 100vh"
+    >
+      <div class="p-3" style="height: 100%; width: 400px">
+        <div class="">
+          <div class="flex justify-start pt-12">
+            <div class="flex items-start justify-start mt-3 text-start">
+              <a href="../home.html" id="back">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="flex items-center justify-center w-full text-center">
+              <h1 class="w-full my-2 text-2xl font-bold">Verification</h1>
+            </div>
+          </div>
+          <div class="my-10">
+            <h1 class="my-2 font-bold text-1xl text-capitalize text-start">
+              Upgrade your UrbanPay account to tier 2 with more personal
+              information
+            </h1>
+          </div>
+
+          <div class="max-w-sm mx-auto">
+            <label
+              for="gid"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >Government issued ID</label
+            >
+            <select
+              id="gid"
+              name="gid"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            >
+              <option selected>Choose a country</option>
+              <option value="NIN">NIN</option>
+            </select>
+          </div>
+
+          <div class="space-y-6 d-none" id="verify">
+            <div class="my-7">
+              <label
+                for="id"
+                class="block mb-2 font-medium text-gray-900 text-start text-md dark:text-white"
+                >ID Number</label
+              >
+              <input
+                type="text"
+                id="id"
+                name="id"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="enter your NIN ID number"
+                required
+              />
+            </div>
+            <div class="my-7">
+              <label
+                for="pofid"
+                class="block mb-2 font-medium text-gray-900 text-start text-md dark:text-white"
+                >Proof of ID</label
+              >
+              <div class="relative">
+                <svg
+                  class="absolute inset-y-0 end-0 mt-2 pr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 25 25"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_2836_8484)">
+                    <path
+                      d="M10.5002 8H13.5002M6.76017 22H17.2402C20.0002 22 21.1002 20.31 21.2302 18.25L21.7502 9.99C21.7826 9.47783 21.7096 8.96446 21.5357 8.48161C21.3619 7.99876 21.0909 7.5567 20.7394 7.18275C20.3879 6.80879 19.9635 6.51089 19.4924 6.30746C19.0212 6.10403 18.5134 5.99939 18.0002 6C17.3902 6 16.8302 5.65 16.5502 5.11L15.8302 3.66C15.3702 2.75 14.1702 2 13.1502 2H10.8602C9.83017 2 8.63017 2.75 8.17017 3.66L7.45017 5.11C7.17017 5.65 6.61017 6 6.00017 6C3.83017 6 2.11017 7.83 2.25017 9.99L2.77017 18.25C2.89017 20.31 4.00017 22 6.76017 22Z"
+                      stroke="#632FD9"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 18C13.79 18 15.25 16.54 15.25 14.75C15.25 12.96 13.79 11.5 12 11.5C10.21 11.5 8.75 12.96 8.75 14.75C8.75 16.54 10.21 18 12 18Z"
+                      stroke="#632FD9"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2836_8484">
+                      <rect width="25" height="25" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <input
+                  type="text"
+                  id="pofid"
+                  name="pofid"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Upload  a copy of your document"
+                  required
+                />
+              </div>
+            </div>
+            <div class="my-7">
+              <label
+                for="country"
+                class="block mb-2 font-medium text-gray-900 text-start text-md dark:text-white"
+                >Country short code</label
+              >
+              <input
+                type="text"
+                id="country"
+                name="country"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="e.g NG, GH, US"
+                required
+              />
+            </div>
+            <div class="w-full my-7">
+              <button
+                data-bs-toggle="modal"
+                data-bs-target="#modalId"
+                class="text-white card-btn focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Upgrade Account
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Your content goes here -->
+    </div>
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div
+      class="modal fade"
+      id="modalId"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalTitleId"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="flex items-center justify-center text-center modal-body">
+            <div>
+              <h1 class="my-3 font-bold text-md text-capitalize">
+                Verification Update Successful
+              </h1>
+              <!-- <h1 class="my-3 text-2xl font-bold text-capitalize">19,000</h1>
+              <p class="my-3 text-sm font-light text-capitalize">
+                Dial the USSD code below, follow steps to complete this
+                transaction
+              </p>
+              <h1 class="my-3 font-bold text-1xl text-capitalize">
+                *826*000*1234#
+              </h1>
+              <p class="my-3 text-sm font-light text-capitalize">
+                USSD Code expires in 01:00
+              </p> -->
+              <div>
+                <a
+                  href="home.html"
+                  class="text-white rounded-md decoration-none text-capitalize card-btn focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Go home
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../assets/bootstrap5.2/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/bootstrap5.2/jquery.min.js"></script>
+    <script>
+      $("#gid").change(function (e) {
+        e.preventDefault();
+        $("#verify").removeClass('d-none');
+      });
+      $("#back").click(function (e) {
+        e.preventDefault();
+
+        if (window.history && window.history.length > 1) {
+          window.history.back();
+        } else {
+          location.href = "addMoneyTab.html";
+        }
+      });
+      function copyLink() {
+        // Get the input element containing the link
+        var linkInput = document.getElementById("acct");
+
+        // Select the text in the input element
+        linkInput.select();
+        linkInput.setSelectionRange(0, 99999); /* For mobile devices */
+
+        // Copy the selected text to the clipboard
+        document.execCommand("copy");
+
+        // Alert the user
+        alert("Link copied to clipboard: " + linkInput.value);
+      }
+      //   $("#copy").click(function (e) {
+      //     e.preventDefault();
+      //     acct = document.getElementById('acct')
+      //     acct.select()
+      //     acct.setSelectionRange(0, 99999)
+      //     if (document.execCommand('copy')) {
+      //         alert('account number copied:  ' + $('#acct').text())
+      //     }
+      //   });
+    </script>
+  </body>
+</html>
