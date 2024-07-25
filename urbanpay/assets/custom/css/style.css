@@ -1,0 +1,171 @@
+body {
+    /* background-color: #f4f4f4; */
+    /* margin: 0 !important;
+    padding: 0 !important; */
+}
+.custom-color {
+    color: #7217aa;
+}
+
+.custom-color1 {
+    color: #0e7437;
+}
+
+.custom-border {
+    border-color: #66A966 !important;
+
+}
+
+.custom-border1 {
+    border-color: #8B18D3 !important;
+}
+
+.custom-bg1 {
+    background-color: #0e7437;
+
+}
+
+.custom-bg {
+    background-color: #7217aa;
+
+}
+
+.navstyle {
+    background-color: #E2BAFA;
+    height: 45px;
+    border-radius: 35px;
+    /* color: black; */
+    width: 500px;
+    margin-top: 10px;
+}
+
+.effectSect:hover {
+    background-color: #A020F0;
+    /* word-wrap: break-word; */
+    margin-inline: 5px;
+    color: white;
+    /* margin-top: 10px; */
+    border-radius: 35px;
+}
+
+.effectSect.actives {
+    background-color: #A020F0;
+    color: white;
+    /* word-wrap: break-word; */
+    margin-inline: 5px;
+    /* margin-top: 10px; */
+    border-radius: 35px;
+}
+
+
+#animatedElement {
+    transform: translateY(100px);
+
+    animation: slideIn 3s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+#animatedText {
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #333;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: slideIn 5s ease-in-out forwards;
+}
+
+#my__Element {
+    transform: scale(0.8);
+    /* Initial scale */
+    opacity: 0;
+    /* Initially hidden */
+    animation: zoomIn 1s ease-in-out forwards;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media ((max-width: 768px)) {
+
+    .none {
+        display: none;
+    }
+
+}
+.get-started{
+    background-color: #632FD9;
+    color: white;
+}
+
+.get-login{
+    color: #632FD9;
+    border: 1px solid #632FD9;
+}
+.text-color{
+    color: #632FD9;
+
+}
+.gray-btn{
+    background-color: #484649 !important;
+}
+.text-grayy{
+    color: #484649 !important;
+}
+.span-color{
+    background-color: #E0D5F7;
+}
+
+.nav-item .active{
+    background-color: #E9E2F9 !important;
+    color: black;
+}
+.card-btn{
+    background-color: #632FD9;
+}
+.chec:checked{
+    background-color: #632FD9;
+    border: 1px solid #632FD9;
+
+
+}
