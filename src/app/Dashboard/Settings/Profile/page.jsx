@@ -15,7 +15,7 @@ const Page = () => {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="container flex items-center justify-center h-screen text-center">
+    <div className=" flex items-center justify-center h-screen text-center">
       <div className="p-3 w-[400px] h-full">
         <div className="flex justify-start pt-12">
           <div className="flex items-start justify-start mt-3 text-start">

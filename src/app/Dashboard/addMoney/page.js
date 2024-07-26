@@ -3,12 +3,12 @@ import React from 'react'
 
 const page = () => {
     return (
-        <div className="container flex items-center justify-center h-screen text-center">
+        <div className=" flex items-center justify-center h-screen text-center">
             <div className="p-3 w-400 h-full">
                 <div className="">
                     <div className="flex justify-start pt-12 mb-12">
                         <div className="flex justify-start items-start text-start mt-3">
-                            <Link href="../home.html">
+                            <Link href="/Dashboard/Home">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="16"

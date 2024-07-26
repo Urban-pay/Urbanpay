@@ -10,13 +10,14 @@ const page = () => {
 
     const [isChecked, setIsChecked] = useState(true);
 
-    const handleChange = () => {
+    const handleChange = (e) => {
         setIsChecked(!isChecked);
+        e.preventDefault();
     };
 
     return (
         <>
-            <main className='container flex items-center justify-center h-screen text-center'>
+            <main className=' flex items-center justify-center h-screen text-center'>
                 <div class="p-3" style={{ height: "100%", width: "400px" }}>
                     <div class="">
                         <div class="flex justify-start pt-12 mb-12">
@@ -367,7 +368,7 @@ const page = () => {
                                                     type="checkbox"
                                                     value=""
                                                     className="sr-only peer"
-                                                    checked={isChecked}
+
                                                     onChange={handleChange}
                                                 />
                                                 <div
@@ -409,7 +410,7 @@ const page = () => {
                                         Logout
                                     </h1>
                                     <Link
-                                        href="index.html"
+                                        href="/"
                                         data-bs-toggle="modal"
                                         data-bs-target="#secmodal"
                                         class="justify-center mt-2 text-center text-decoration-none align-center d-flex"
@@ -499,8 +500,6 @@ const page = () => {
                             </div>
                         </div>
                     </div>
-
-
                     <BottomNav />
                 </div>
             </main>

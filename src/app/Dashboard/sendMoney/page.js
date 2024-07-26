@@ -2,10 +2,11 @@ import Link from 'next/link';
 import React from 'react';
 
 
+
 const page = () => {
     return (
         <div
-            class="container flex items-center justify-center h-screen text-center"
+            class="flex items-center justify-center h-screen text-center"
             style={{ height: "100vh" }}
         >
             <div class="p-3" style={{
@@ -14,7 +15,7 @@ const page = () => {
                 < div class="" >
                     <div class="flex justify-start pt-12 mb-12">
                         <div class="flex justify-start items-start text-start mt-3">
-                            <Link href="../home.html">
+                            <Link href='/Dashboard/Home'>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="16"

@@ -2,35 +2,20 @@
 import React from 'react';
 import Image from 'next/image';
 import display from '../../../../../assets/img/dashoard/display.jpg'
+import BackBtn from '../../../../components/BackBtn';
 
 const page = () => {
     const copyLink = () => {
-        // Copy to clipboard logic here
         const tag = document.getElementById('acct');
         navigator.clipboard.writeText(tag.value);
     };
 
     return (
-        <div className="container flex items-center justify-center h-screen text-center">
+        <div className=" flex items-center justify-center h-screen text-center">
             <div className="p-3 h-full w-[400px]">
                 <div className="flex justify-start pt-12 mb-12">
                     <div className="flex justify-start items-start text-start mt-3">
-                        <a href="../home.html" id="back">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                viewBox="0 0 16 16"
-                                fill="none"
-                            >
-                                <path
-                                    fillRule="evenodd"
-                                    clipRule="evenodd"
-                                    d="M11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536Z"
-                                    fill="black"
-                                />
-                            </svg>
-                        </a>
+                        <BackBtn />
                     </div>
                     <div className="mb-12 pt-12 w-full flex justify-center items-center">
                         <div>

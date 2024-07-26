@@ -19,7 +19,7 @@ const page = () => {
           type="image/x-icon"
         />
       </Head>
-      <div className="container flex items-center justify-center h-screen text-center">
+      <div className=" flex items-center justify-center h-screen text-center">
         <div className="p-3" style={{ height: "100%", width: "400px" }}>
           <div>
             <div className="flex justify-start pt-12">

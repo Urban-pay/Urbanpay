@@ -1,8 +1,9 @@
+import BottomNav from "../../../components/BottomNav";
 import React from "react";
 
 const Transactions = () => {
   return (
-    <div className="container flex items-center justify-center h-screen text-center">
+    <div className=" flex items-center justify-center h-screen text-center">
       <div className="p-3 h-full w-96">
         <div>
           <div className="flex justify-between pt-3 mb-3">
@@ -147,7 +148,7 @@ const Transactions = () => {
           </div>
         </div>
 
-       
+        <BottomNav />
       </div>
     </div>
   );

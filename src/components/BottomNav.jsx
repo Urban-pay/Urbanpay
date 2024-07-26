@@ -32,7 +32,7 @@ const BottomNav = () => {
           </Link>
         </div>
         <div class="img-wrapper">
-          <Link href="card.html">
+          <Link href="/Dashboard/Card">
             <svg
               className="img-2"
               width="25"
@@ -60,7 +60,7 @@ const BottomNav = () => {
           </Link>
         </div>
         <div class="img-wrapper">
-          <Link href="transaction.html">
+          <Link href="/Dashboard/Transactions">
             <svg
               className="img-2"
               width="24"

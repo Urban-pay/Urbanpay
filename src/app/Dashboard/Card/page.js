@@ -1,20 +1,21 @@
 "use client"
 import { useState } from 'react';
+import BottomNav from "../../../components/BottomNav";
 
 const page = () => {
     const [activeTab, setActiveTab] = useState('home');
 
     return (
-        <div className="container flex items-center justify-center h-screen text-center">
+        <div className=" flex items-center justify-center h-screen text-center">
             <div className="p-3 h-full w-[400px]">
                 <div className="pt-2 mb-2">
                     <h1 className="text-2xl font-bold text-start">Card</h1>
                 </div>
 
                 <div className="space-y-6">
-                   
+
                     <ul className="flex justify-center w-full space-x-4">
-                        <li className="nav-item" role="presentation">
+                        <li className="" role="presentation">
                             <button
                                 className={`nav-link ${activeTab === 'home' ? 'text-dark' : 'text-gray-500'}`}
                                 onClick={() => setActiveTab('home')}
@@ -22,9 +23,9 @@ const page = () => {
                                 Virtual Card
                             </button>
                         </li>
-                        <li className="nav-item" role="presentation">
+                        <li className="" role="presentation">
                             <button
-                                className={`nav-link ${activeTab === 'profile' ? 'text-dark' : 'text-gray-500'}`}
+                                className={` ${activeTab === 'profile' ? 'text-dark' : 'text-gray-500'}`}
                                 onClick={() => setActiveTab('profile')}
                             >
                                 Physical Card
@@ -32,7 +33,7 @@ const page = () => {
                         </li>
                     </ul>
 
-                 
+
                     <div className="tab-content">
                         {activeTab === 'home' && (
                             <div className="tab-pane">
@@ -62,7 +63,7 @@ const page = () => {
                                                     transform="scale(0.000244141 0.000388502)"
                                                 />
                                             </pattern>
-                                            
+
                                         </defs>
                                     </svg>
                                 </div>
@@ -194,7 +195,9 @@ const page = () => {
                         )}
                     </div>
                 </div>
+                <BottomNav />
             </div>
+
         </div>
     );
 };
