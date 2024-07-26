@@ -3,15 +3,15 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import Image from "next/image";
 import display from "../../../../../assets/img/dashoard/display.jpg";
+import { useRouter } from "next/navigation";
 
 const Page = () => {
-  // State to manage modal visibility
+  const router = useRouter();
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Open modal handler
   const openModal = () => setIsModalOpen(true);
 
-  // Close modal handler
   const closeModal = () => setIsModalOpen(false);
 
   return (
@@ -19,10 +19,7 @@ const Page = () => {
       <div className="p-3 w-[400px] h-full">
         <div className="flex justify-start pt-12">
           <div className="flex items-start justify-start mt-3 text-start">
-            <button
-              onClick={() => window.history.back()}
-              className="text-black"
-            >
+            <button onClick={() => router.back()} className="text-black">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
