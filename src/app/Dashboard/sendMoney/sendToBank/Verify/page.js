@@ -2,9 +2,17 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 
-
 const MyComponent = () => {
     const [checked, setChecked] = useState(false);
+    const [modalVisible, setModalVisible] = useState(false);
+
+    const handleSendMoneyClick = () => {
+        setModalVisible(true);
+    };
+
+    const handleCloseModal = () => {
+        setModalVisible(false);
+    };
 
     return (
         <div className="flex flex-col items-center m-3">
@@ -45,47 +53,50 @@ const MyComponent = () => {
             <div className="mb-3">
                 <button
                     type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#modalId"
+                    onClick={handleSendMoneyClick}
                     className="text-white card-btn focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                     Send Money
                 </button>
             </div>
 
-            <div
-                className="modal fade"
-                id="modalId"
-                tabIndex="-1"
-                role="dialog"
-                aria-labelledby="modalTitleId"
-                aria-hidden="true"
-            >
+            {modalVisible && (
                 <div
-                    className="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
-                    role="document"
+                    className="modal fade show"
+                    id="modalId"
+                    tabIndex="-1"
+                    role="dialog"
+                    aria-labelledby="modalTitleId"
+                    aria-hidden="true"
+                    style={{ display: 'block' }}
                 >
-                    <div className="modal-content">
-                        <div className="modal-body flex justify-center items-center text-center">
-                            <div>
-                                <h1 className="text-md font-bold text-capitalize my-3">
-                                    Transaction Successful
-                                </h1>
-                                <p className="text-sm font-light text-capitalize my-3">
-                                    ID hidden from receiver
-                                </p>
+                    <div
+                        className="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+                        role="document"
+                    >
+                        <div className="modal-content">
+                            <div className="modal-body flex justify-center items-center text-center">
                                 <div>
-                                    <Link href="../home">
-                                        <span className="text-white rounded-md decoration-none text-capitalize card-btn focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                            Go Home
-                                        </span>
-                                    </Link>
+                                    <h1 className="text-md font-bold text-capitalize my-3">
+                                        Transaction Successful
+                                    </h1>
+                                    <p className="text-sm font-light text-capitalize my-3">
+                                        ID hidden from receiver
+                                    </p>
+                                    <div>
+                                        <Link href="../home">
+                                            <span className="text-white rounded-md decoration-none text-capitalize card-btn focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                                Go Home
+                                            </span>
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
+                            <button type="button" onClick={handleCloseModal} className="close-btn">Close</button>
                         </div>
                     </div>
                 </div>
-            </div>
+            )}
 
             <div className="container flex items-center justify-center text-center" style={{ height: '100vh' }}>
                 <div className="p-3" style={{ height: '100%', width: '400px' }}>
