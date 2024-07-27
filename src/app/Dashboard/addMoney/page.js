@@ -224,7 +224,7 @@ const page = () => {
                                     stroke-width="1.5"
                                     stroke-miterlimit="10"
                                     stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                    strokeLineJoin="round"
                                 />
                                 <path
                                     d="M27 15H24M16 25H13M20 23C20.7956 23 21.5587 22.6839 22.1213 22.1213C22.6839 21.5587 23 20.7956 23 20C23 19.2044 22.6839 18.4413 22.1213 17.8787C21.5587 17.3161 20.7956 17 20 17C19.2044 17 18.4413 17.3161 17.8787 17.8787C17.3161 18.4413 17 19.2044 17 20C17 20.7956 17.3161 21.5587 17.8787 22.1213C18.4413 22.6839 19.2044 23 20 23Z"
@@ -232,7 +232,7 @@ const page = () => {
                                     stroke-width="1.5"
                                     stroke-miterlimit="10"
                                     stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                    strokeLineJoin="round"
                                 />
                             </svg>
                             <div class="flex justify-between w-full mt-2">
@@ -286,7 +286,7 @@ const page = () => {
                                     stroke="black"
                                     stroke-width="1.5"
                                     stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                    strokeLineJoin="round"
                                 />
                             </svg>
                             <div class="flex justify-between w-full mt-2">

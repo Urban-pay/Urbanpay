@@ -4,7 +4,7 @@ import Link from "next/link";
 import Display from "../../../../assets/img/dashoard/display.jpg";
 import BottomNav from "../../../components/BottomNav";
 
-const page = () => {
+const Page = () => {
   return (
     <main className="flex items-center justify-center h-full text-center">
       <div>
@@ -275,7 +275,7 @@ const page = () => {
                             stroke="white"
                             stroke-width="1.5"
                             stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeLineJoin="round"
                           />
                         </svg>
                       </div>
@@ -422,4 +422,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

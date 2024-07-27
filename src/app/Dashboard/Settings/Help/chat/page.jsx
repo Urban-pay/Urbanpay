@@ -3,22 +3,9 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
   return (
     <>
-      <Head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>UrbanPay: dashboard</title>
-        <link rel="stylesheet" href="/assets/bootstrap5.2/bootstrap.min.css" />
-        <link rel="stylesheet" href="/assets/custom/css/style.css" />
-        <link rel="stylesheet" href="/assets/tailwind/tailwind.css" />
-        <link
-          rel="shortcut icon"
-          href="/assets/img/URBAN PAY LOGO PNG.png"
-          type="image/x-icon"
-        />
-      </Head>
       <div className=" flex items-center justify-center h-screen text-center">
         <div className="p-3" style={{ height: "100%", width: "400px" }}>
           <div>
@@ -53,7 +40,7 @@ const page = () => {
                   style={{ backgroundColor: "#20A090" }}
                 >
                   <p className="text-sm font-normal py-2.5 text-gray-900 dark:text-white">
-                    Hi there. Got a question? I'm here to help.
+                    Hi there. Got a question? I&aposm here to help.
                   </p>
                 </div>
                 <span className="text-sm font-normal py-4 text-gray-500 dark:text-gray-400">
@@ -81,4 +68,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

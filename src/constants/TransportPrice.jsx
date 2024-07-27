@@ -19,14 +19,14 @@ const TransportPricesSection = () => {
           accordingly.
         </p>
         <div>
-          <Image src={Bus} />
+          <Image src={Bus} alt="Bus" width={140} height={140} />
         </div>
 
         <button
           className="h-10 rounded-md bg-orange-600 text-white px-3"
           style={{ backgroundColor: "#FF971D" }}
         >
-          View today's transport price
+          View today&aposs transport price
         </button>
       </div>
     </div>

@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import BackBtn from "../../../../components/BackBtn";
 
-const page = () => {
+const Page = () => {
   return (
     <div className="flex items-center justify-center h-screen text-center">
       <div className="p-3 h-full w-[400px]">
@@ -192,4 +192,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

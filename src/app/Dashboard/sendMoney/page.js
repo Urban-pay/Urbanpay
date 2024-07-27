@@ -3,7 +3,7 @@ import React from 'react';
 
 
 
-const page = () => {
+const Page = () => {
     return (
         <div
             class="flex items-center justify-center h-screen text-center"
@@ -115,7 +115,7 @@ const page = () => {
                                     stroke-width="1.5"
                                     stroke-miterlimit="10"
                                     stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                    strokeLineJoin="round"
                                 />
                                 <path
                                     d="M22 18.5C22.197 18.5 22.392 18.4612 22.574 18.3858C22.756 18.3104 22.9214 18.1999 23.0607 18.0607C23.1999 17.9214 23.3104 17.756 23.3858 17.574C23.4612 17.392 23.5 17.197 23.5 17C23.5 16.803 23.4612 16.608 23.3858 16.426C23.3104 16.244 23.1999 16.0786 23.0607 15.9393C22.9214 15.8001 22.756 15.6896 22.574 15.6142C22.392 15.5388 22.197 15.5 22 15.5C21.6022 15.5 21.2206 15.658 20.9393 15.9393C20.658 16.2206 20.5 16.6022 20.5 17C20.5 17.3978 20.658 17.7794 20.9393 18.0607C21.2206 18.342 21.6022 18.5 22 18.5Z"
@@ -123,7 +123,7 @@ const page = () => {
                                     stroke-width="1.5"
                                     stroke-miterlimit="10"
                                     stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                    strokeLineJoin="round"
                                 />
                             </svg>
                             <div class="flex justify-between w-full mt-2">
@@ -271,4 +271,4 @@ const page = () => {
     );
 }
 
-export default page;
+export default Page;

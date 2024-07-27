@@ -1,9 +1,13 @@
 "use client"
 import React, { useState } from 'react';
 import BackBtn from '../../../../components/BackBtn';
+import Image from 'next/image';
+import deleteIcon from '../../../../../assets/img/dashoard/deleteIcon.png';
 
 
-const page = () => {
+
+
+const Page = () => {
     const [pin, setPin] = useState(['', '', '', '', '']);
 
 
@@ -31,7 +35,7 @@ const page = () => {
 
 
     return (
-        <div className=" flex items-center justify-center h-screen text-center">
+        <div className="flex items-center justify-center h-screen text-center">
             <div className="p-3 h-full w-[400px]">
                 <div>
                     <div className="flex justify-start pt-12 mb-12">
@@ -97,10 +101,12 @@ const page = () => {
                                     className="w-full p-2 border rounded-md text-center justify-center items-center text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring focus:border-blue-300 flex justify-center items-center"
                                     onClick={deleteLastDigit}
                                 >
-                                    <img
-                                        src="../../media/dashoard/lucide_delete.png"
-                                        className="img-fluid"
+                                    <Image
+                                        src={deleteIcon}
+                                        className=""
                                         alt="Delete"
+                                        width={24}
+                                        height={24}
                                     />
                                 </button>
                             </div>
@@ -123,4 +129,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

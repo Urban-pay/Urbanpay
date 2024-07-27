@@ -6,7 +6,7 @@ import Link from 'next/link'
 import BottomNav from '../../../components/BottomNav'
 
 
-const page = () => {
+const Page = () => {
 
     const [isChecked, setIsChecked] = useState(true);
 
@@ -507,4 +507,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

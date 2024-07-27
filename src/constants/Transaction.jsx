@@ -15,7 +15,7 @@ const Transaction = () => {
         </h1>
         <p className="text-sm text-slate-800 py-5">
           We notify you when a fake transaction has been detected through our
-          system's continuous analysis.
+          system&aposs continuous analysis.
         </p>
         <button
           className="h-10 rounded-md bg-red-600 text-white px-3"
@@ -30,8 +30,8 @@ const Transaction = () => {
           alt="Transaction Illustration"
           className="object-contain w-full h-full"
           layout="responsive"
-          width={700} 
-          height={700} 
+          width={700}
+          height={700}
         />
       </div>
     </main>

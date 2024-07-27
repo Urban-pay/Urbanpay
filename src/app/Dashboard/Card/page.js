@@ -1,8 +1,9 @@
 "use client"
 import { useState } from 'react';
 import BottomNav from "../../../components/BottomNav";
+import Image from 'next/image';
 
-const page = () => {
+const Page = () => {
     const [activeTab, setActiveTab] = useState('home');
 
     return (
@@ -129,9 +130,11 @@ const page = () => {
                         {activeTab === 'profile' && (
                             <div className="tab-pane">
                                 <div className="w-full">
-                                    <img
-                                        src="../media/dashoard/Urban Pay Branding - ATM Card Design 1.png"
+                                    <Image
+                                        src={''}
                                         alt="Physical Card Design"
+                                        width={24}
+                                        height={24}
                                     />
                                 </div>
                                 <div className="my-10">
@@ -202,4 +205,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;
