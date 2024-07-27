@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="flex text-center items-center justify-center">
           <div>
             <h1 className="text-black text-5xl font-extrabold">
-              Don't <span className="text-customColor">Pester</span> about
+              Don&apost <span className="text-customColor">Pester</span> about
               <br /> borders anymore
             </h1>
             <p className="text-sm text-slate-800 py-5 lg:text-3xl">

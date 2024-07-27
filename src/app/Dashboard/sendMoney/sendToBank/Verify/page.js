@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
+
 
 
 const MyComponent = () => {
@@ -134,7 +136,7 @@ const MyComponent = () => {
                         <div className="w-full flex justify-center items-center mb-12 pt-12">
                             <div className="w-full">
                                 <div className="w-full flex justify-center items-center">
-                                    <img src="../../media/dashoard/Display picture.jpg" alt="" />
+                                    <Image src={''} alt="" width={24} height={24} />
                                 </div>
                                 <div className="w-full flex justify-between my-3 space-x-4">
                                     <p className="text-capitalize text-sm text-gray-400">Send</p>

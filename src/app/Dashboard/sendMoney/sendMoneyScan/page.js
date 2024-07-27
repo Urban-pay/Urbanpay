@@ -2,7 +2,7 @@
 import React from 'react';
 import BackBtn from '../../../../components/BackBtn';
 
-const page = () => {
+const Page = () => {
 
     
     return (
@@ -76,4 +76,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

@@ -3,7 +3,7 @@ import BackBtn from '../../../../components/BackBtn';
 import React, { useState } from 'react';
 
 
-const page = () => {
+const Page = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const openModal = () => setIsModalOpen(true);
@@ -112,4 +112,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

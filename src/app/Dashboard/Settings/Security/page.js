@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import BackBtn from "../../../../components/BackBtn";
 
-const page = () => {
+const Page = () => {
 
     const [isChecked, setIsChecked] = useState(true);
 
@@ -184,5 +184,5 @@ const page = () => {
     );
 }
 
-export default page;
+export default Page;
 
