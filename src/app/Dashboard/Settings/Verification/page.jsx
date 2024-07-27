@@ -3,7 +3,7 @@ import display from "../../../../../assets/img/dashoard/display.jpg";
 import Image from "next/image";
 import BackBtn from "../../../../components/BackBtn";
 
-const page = () => {
+const Page = () => {
   return (
     <div className=" flex items-center justify-center h-screen text-center">
       <div className="p-3 h-full w-96">
@@ -34,7 +34,10 @@ const page = () => {
           </div>
 
           <div className="my-3">
-            <a href="verification1.html" className="text-decoration-none">
+            <a
+              href="/Dashboard/Settings/Verification/Verification1"
+              className="text-decoration-none"
+            >
               <div className="flex p-3 space-x-2 rounded-lg bg-green-100">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +77,10 @@ const page = () => {
             </a>
           </div>
           <div className="my-3">
-            <a href="verification2.html" className="text-decoration-none">
+            <a
+              href="/Dashboard/Settings/Verification/Verification2"
+              className="text-decoration-none"
+            >
               <div className="flex p-3 space-x-2 rounded-lg bg-purple-100">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -118,4 +124,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
