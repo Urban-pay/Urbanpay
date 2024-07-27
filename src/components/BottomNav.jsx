@@ -87,7 +87,7 @@ const BottomNav = () => {
           </Link>
         </div>
         <div class="iconsax-linear-wrapper">
-          <Link href="settings.html">
+          <Link href="/Dashboard/Settings">
             <svg
               width="20"
               height="19"
