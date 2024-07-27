@@ -18,26 +18,26 @@ const Page = () => {
     return (
         <>
             <main className=' flex items-center justify-center h-screen text-center'>
-                <div class="p-3" style={{ height: "100%", width: "400px" }}>
-                    <div class="">
-                        <div class="flex justify-start pt-12 mb-12">
-                            <div class="flex items-center justify-center mr-10">
+                <div className="p-3" style={{ height: "100%", width: "400px" }}>
+                    <div className="">
+                        <div className="flex justify-start pt-12 mb-12">
+                            <div className="flex items-center justify-center mr-10">
                                 <Image src={display} alt="" />
                             </div>
-                            <div class="">
-                                <h1 class="w-full my-2 font-light text-1xl">Stanley Drey</h1>
-                                <div class="flex justify-between w-full">
-                                    <p class="px-1 text-sm custom-color">@drey</p>
-                                    <span class="px-1 text-sm rounded-md span-color custom-color"
+                            <div className="">
+                                <h1 className="w-full my-2 font-light text-1xl">Stanley Drey</h1>
+                                <div className="flex justify-between w-full">
+                                    <p className="px-1 text-sm custom-color">@drey</p>
+                                    <span className="px-1 text-sm rounded-md span-color custom-color"
                                     >Tier 0</span
                                     >
                                 </div>
                             </div>
                         </div>
 
-                        <div class="space-y-6">
-                            <h1 class="text-2xl font-bold text-start">GENERAL</h1>
-                            <div class="flex">
+                        <div className="space-y-6">
+                            <h1 className="text-2xl font-bold text-start">GENERAL</h1>
+                            <div className="flex">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="60"
@@ -62,15 +62,15 @@ const Page = () => {
                                         strokeWidth="2"
                                     />
                                 </svg>
-                                <div class="flex justify-between w-full mt-2">
+                                <div className="flex justify-between w-full mt-2">
                                     <h1
-                                        class="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
+                                        className="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
                                     >
                                         Profile
                                     </h1>
                                     <Link
                                         href="Settings/Profile"
-                                        class="justify-center mt-2 text-center text-decoration-none align-center d-flex"
+                                        className="justify-center mt-2 text-center text-decoration-none align-center d-flex"
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@ const Page = () => {
                                     </Link>
                                 </div>
                             </div>
-                            <div class="flex">
+                            <div className="flex">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="60"
@@ -120,15 +120,15 @@ const Page = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <div class="flex justify-between w-full mt-2">
+                                <div className="flex justify-between w-full mt-2">
                                     <h1
-                                        class="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
+                                        className="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
                                     >
                                         Help & Support
                                     </h1>
                                     <Link
                                         href="Settings/Help"
-                                        class="justify-center mt-2 text-center text-decoration-none align-center d-flex"
+                                        className="justify-center mt-2 text-center text-decoration-none align-center d-flex"
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +147,7 @@ const Page = () => {
                                     </Link>
                                 </div>
                             </div>
-                            <div class="flex">
+                            <div className="flex">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="60"
@@ -190,15 +190,15 @@ const Page = () => {
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <div class="flex justify-between w-full mt-2">
+                                <div className="flex justify-between w-full mt-2">
                                     <h1
-                                        class="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
+                                        className="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
                                     >
                                         Verification
                                     </h1>
                                     <Link
                                         href="Settings/Verification"
-                                        class="justify-center mt-2 text-center text-decoration-none align-center d-flex"
+                                        className="justify-center mt-2 text-center text-decoration-none align-center d-flex"
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -218,7 +218,7 @@ const Page = () => {
                                 </div>
                             </div>
 
-                            <div class="flex">
+                            <div className="flex">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="60"
@@ -239,15 +239,15 @@ const Page = () => {
                                         fill="#222222"
                                     />
                                 </svg>
-                                <div class="flex justify-between w-full mt-2">
+                                <div className="flex justify-between w-full mt-2">
                                     <h1
-                                        class="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
+                                        className="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
                                     >
                                         Security
                                     </h1>
                                     <Link
                                         href="Settings/Security"
-                                        class="justify-center mt-2 text-center text-decoration-none align-center d-flex"
+                                        className="justify-center mt-2 text-center text-decoration-none align-center d-flex"
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -266,7 +266,7 @@ const Page = () => {
                                     </Link>
                                 </div>
                             </div>
-                            <div class="flex">
+                            <div className="flex">
                                 <svg
                                     width="60"
                                     height="60"
@@ -285,15 +285,15 @@ const Page = () => {
                                     />
                                 </svg>
 
-                                <div class="flex justify-between w-full mt-2">
+                                <div className="flex justify-between w-full mt-2">
                                     <h1
-                                        class="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
+                                        className="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
                                     >
                                         Biometrics
                                     </h1>
                                     <Link
                                         href=""
-                                        class="justify-center mt-2 text-center text-decoration-none align-center d-flex"
+                                        className="justify-center mt-2 text-center text-decoration-none align-center d-flex"
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -312,7 +312,7 @@ const Page = () => {
                                     </Link>
                                 </div>
                             </div>
-                            <div class="flex">
+                            <div className="flex">
                                 <svg
                                     width="60"
                                     height="60"
@@ -350,25 +350,24 @@ const Page = () => {
                                     </defs>
                                 </svg>
 
-                                <div class="flex justify-between w-full mt-2">
+                                <div className="flex justify-between w-full mt-2">
                                     <h1
-                                        class="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
+                                        className="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
                                     >
                                         Shake to send
                                     </h1>
                                     <Link
                                         href=""
-                                        class="justify-center mt-2 text-center text-decoration-none align-center d-flex"
+                                        className="justify-center mt-2 text-center text-decoration-none align-center d-flex"
                                     ><div
-                                        class="form-check form-switch"
+                                        className="form-check form-switch"
                                         style={{ width: '40px', height: '24px' }}
                                     >
                                             <label className="inline-flex items-center cursor-pointer">
                                                 <input
                                                     type="checkbox"
-                                                    value=""
-                                                    className="sr-only peer"
 
+                                                    className="sr-only peer"
                                                     onChange={handleChange}
                                                 />
                                                 <div
