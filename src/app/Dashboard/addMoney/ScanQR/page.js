@@ -1,7 +1,7 @@
 import React from 'react'
 import BackBtn from '../../../../components/BackBtn';
 
-const page = () => {
+const Page = () => {
     return (
         <div className=" flex items-center justify-center h-screen text-center" style={{ height: '100vh' }}>
             <div className="p-3" style={{ height: '100%', width: '400px' }}>
@@ -35,4 +35,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

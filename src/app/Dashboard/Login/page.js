@@ -48,7 +48,7 @@ const Page = () => {
             </div>
             <div className="flex items-center justify-between mt-3">
               <div className="text-sm">
-                <Link href="/forgot-password" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                <Link href="/Dashboard/Login/ForgotPassword" className="font-semibold text-indigo-600 hover:text-indigo-500">
                   Forgot password?
                 </Link>
               </div>

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import display from '../../../../../assets/img/dashoard/display.jpg'
 import BackBtn from '../../../../components/BackBtn';
 
-const page = () => {
+const Page = () => {
     const copyLink = () => {
         const tag = document.getElementById('acct');
         navigator.clipboard.writeText(tag.value);
@@ -96,4 +96,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

@@ -5,17 +5,32 @@ import Image from "next/image";
 import display from "../../../../../assets/img/dashoard/display.jpg";
 import { useRouter } from "next/navigation";
 
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    width: "300px",
+    textAlign: "center",
+  },
+  overlay: {
+    backgroundColor: "rgba(0, 0, 0, 0.75)",
+    zIndex: 1000,
+  },
+};
+
 const Page = () => {
   const router = useRouter();
-
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
-
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className=" flex items-center justify-center h-screen text-center">
+    <div className="flex items-center justify-center h-screen text-center">
       <div className="p-3 w-[400px] h-full">
         <div className="flex justify-start pt-12">
           <div className="flex items-start justify-start mt-3 text-start">
@@ -58,34 +73,29 @@ const Page = () => {
         </div>
 
         <div className="space-y-6">
-          {["Full name", "Username", "Mail", "Phone number"].map(
-            (label, index) => (
-              <div className="my-7" key={index}>
-                <label
-                  htmlFor={label.toLowerCase().replace(" ", "-")}
-                  className="block mb-2 font-medium text-gray-900 text-md dark:text-white"
-                >
-                  {label}
-                </label>
-                <input
-                  type="text"
-                  id={label.toLowerCase().replace(" ", "-")}
-                  name={label.toLowerCase().replace(" ", "-")}
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder={
-                    label === "Full name"
-                      ? "Precious Ojeh"
-                      : label === "Username"
-                      ? "@drey"
-                      : label === "Mail"
-                      ? "stanleydrey@urbanpay.com"
-                      : "0906664773"
-                  }
-                  required
-                />
-              </div>
-            )
-          )}
+          {[
+            { label: "Full name", placeholder: "Precious Ojeh" },
+            { label: "Username", placeholder: "@drey" },
+            { label: "Mail", placeholder: "stanleydrey@urbanpay.com" },
+            { label: "Phone number", placeholder: "0906664773" },
+          ].map((field, index) => (
+            <div className="my-7" key={index}>
+              <label
+                htmlFor={field.label.toLowerCase().replace(" ", "-")}
+                className=" flex float-start mb-2 font-medium text-black-900 text-md "
+              >
+                {field.label}
+              </label>
+              <input
+                type="text"
+                id={field.label.toLowerCase().replace(" ", "-")}
+                name={field.label.toLowerCase().replace(" ", "-")}
+                className="bg-gray-50 border border-gray-300 text-black-900 text-sm rounded-lg block w-full p-2.5"
+                placeholder={field.placeholder}
+                required
+              />
+            </div>
+          ))}
           <div className="w-full my-7">
             <button
               onClick={openModal}
@@ -97,13 +107,11 @@ const Page = () => {
         </div>
       </div>
 
-      {/* Modal */}
       <Modal
         isOpen={isModalOpen}
         onRequestClose={closeModal}
         contentLabel="Profile Update Successful"
-        className="modal-content"
-        overlayClassName="modal-overlay"
+        style={customStyles}
       >
         <div className="flex items-center justify-center text-center p-4">
           <div>
@@ -111,7 +119,7 @@ const Page = () => {
               Profile Update Successful
             </h1>
             <a
-              href="home.html"
+              href="/"
               className="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 rounded-md"
               onClick={closeModal}
             >
