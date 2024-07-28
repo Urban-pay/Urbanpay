@@ -2,7 +2,6 @@ import React from 'react';
 import Money from '../constants/Money';
 import Transaction from '../constants/Transaction';
 import TransportPrice from '..//constants/TransportPrice';
-import Card from '../constants/Card';
 import Phone from "../../assets/img/Phone.png";
 import Image from 'next/image';
 import { NavigationBar, Footer } from "../components/index";
@@ -16,13 +15,10 @@ const Hero = () => {
         <div className="flex text-center items-center justify-center">
           <div>
             <h1 className="text-black text-5xl font-extrabold">
-              Don&apost <span className="text-customColor">Pester</span> about
-              <br /> borders anymore
+              There is no need to worry about borders anymore
             </h1>
-            <p className="text-sm text-slate-800 py-5 lg:text-3xl">
-              Welcome to a borderless payment future where
-              <br />
-              simplicity and global connectivity are just a click away
+            <p>
+              
             </p>
             <div className="flex justify-center items-center space-x-4">
               <button className="h-10 rounded-full border-2 border-[#66A966]  shadow-lg text-slate-800 flex items-center justify-center px-3">
