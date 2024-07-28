@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { NavigationBar, Footer } from "../components/index";
 import { TypeAnimation } from 'react-type-animation';
 import Button from '../components/Button';
+import { Faqs } from '../constants/index';
 
 
 
@@ -83,6 +84,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <Faqs />
       <Footer />
     </>
   );
