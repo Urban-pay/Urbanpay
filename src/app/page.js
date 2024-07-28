@@ -1,15 +1,11 @@
 "use client"
 import React from 'react';
-import Money from '../constants/Money';
-import Transaction from '../constants/Transaction';
-import TransportPrice from '..//constants/TransportPrice';
+import { Money, Transaction, TransportPrice, Faqs } from '../constants/index';
 import wallet from "../../assets/img/wallet.png";
 import Image from 'next/image';
-import { NavigationBar, Footer } from "../components/index";
+import { NavigationBar, Footer, Button } from "../components/index";
 import { TypeAnimation } from 'react-type-animation';
-import Button from '../components/Button';
-import { Faqs } from '../constants/index';
-
+import Link from 'next/link';
 
 
 const Hero = () => {
