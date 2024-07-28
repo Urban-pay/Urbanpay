@@ -7,6 +7,7 @@ import Image from 'next/image';
 import { NavigationBar, Footer } from "../components/index";
 
 
+
 const Hero = () => {
   return (
     <>
@@ -14,12 +15,10 @@ const Hero = () => {
       <div className="my-40">
         <div className="flex text-center items-center justify-center">
           <div>
-            <h1 className="text-black text-5xl font-extrabold">
-              There is no need to worry about borders anymore
+            <h1 className="text-black space-y-2 lg:text-5xl font-extrabold">
+              There is no need to <span>worry</span> <br />about borders anymore
             </h1>
-            <p>
-              
-            </p>
+
             <div className="flex justify-center items-center space-x-4">
               <button className="h-10 rounded-full border-2 border-[#66A966]  shadow-lg text-slate-800 flex items-center justify-center px-3">
                 {/* add svg */}

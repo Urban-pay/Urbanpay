@@ -1,18 +1,26 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import UrbanPaylogo from "../../assets/img/UrbanPaylogo.png";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 const NavigationBar = () => {
   return (
     <nav className="flex justify-between items-center p-6">
       <div className="flex items-center">
-        <Image
-          src={UrbanPaylogo}
+        <motion.div
           className=""
-          width={42}
-          height={42}
-          alt="UrbanPay Logo"
-        />
+          animate={{ rotate: 360 }}
+          transition={{ repeat: Infinity, duration: 2, ease: "linear" }}
+        >
+          <Image
+            src={UrbanPaylogo}
+            width={42}
+            height={42}
+            alt="UrbanPay Logo"
+          />
+        </motion.div>
         <span className="text-lg font-bold leading-6 text-gray-900">
           URBAN PAY
         </span>
@@ -41,15 +49,30 @@ const NavigationBar = () => {
       </div>
 
       <div className="flex items-center space-x-4">
-        <a
-          href="#"
-          className="text-lg rounded font-bold py-2 px-4 text-gray-900"
-        >
-          Log in
-        </a>
-        <button className="bg-purple-600 text-white font-bold py-2 px-4 rounded">
-          Create Account
-        </button>
+        <Link href="/">
+          <motion.span
+            className="text-lg rounded font-bold py-2 px-4 text-gray-900"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            whileHover={{ scale: 1.1, backgroundColor: "#e2baf9" }}
+            whileTap={{ scale: 0.9 }}
+          >
+            Log in
+          </motion.span>
+        </Link>
+        <Link href="/">
+          <motion.button
+            className="bg-purple-600 text-white font-bold py-2 px-4 rounded"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            whileHover={{ scale: 1.1, backgroundColor: "#A020F0" }}
+            whileTap={{ scale: 0.9 }}
+          >
+            Create Account
+          </motion.button>
+        </Link>
       </div>
     </nav>
   );
