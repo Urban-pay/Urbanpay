@@ -7,7 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-
+      colors: {
+        customPurple: '#A020F0',
+        customGreen: '#43B671'
+      },
     },
   },
   plugins: [],
