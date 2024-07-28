@@ -43,7 +43,7 @@ const page = () => {
                                 </Link>
                             </button>
                             <p className="mt-10 text-center text-sm text-gray-500">
-                                Didn't receive a code?{' '}
+                                Didn&apos;t receive a code?{' '}
                                 <Link href="create-account.html" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500 text-grayy">
                                     Resend
                                 </Link>

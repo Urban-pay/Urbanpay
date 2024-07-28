@@ -75,7 +75,7 @@ const Hero = () => {
               and flexibility.
             </p>
             <div className="flex-wrap space-x-4">
-              <Button children={'Get Started'} style={{ backgroundColor: '#A020F0' }} />
+              <Button text='Get Started' style={{ backgroundColor: '#A020F0' }} />
             </div>
           </div>
         </div>

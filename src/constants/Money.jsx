@@ -24,10 +24,7 @@ const Money = () => {
           <br /> your funds and never interfere with your
           <br /> financial matters.
         </p>
-        <Button
-          children={"Download App"}
-          style={{ backgroundColor: "#43B671" }}
-        />
+        <Button text="Download App" style={{ backgroundColor: "#43B671" }} />
       </div>
     </main>
   );

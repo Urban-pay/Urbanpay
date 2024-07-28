@@ -52,9 +52,9 @@ const page = () => {
                     data-aos-duration="3000"
                 >
                     <div className="w-full md:w-11/12 lg:w-10/12">
-                        <h1 className="text-custom-color text-5xl font-bold my-9">Know what we're up to</h1>
+                        <h1 className="text-custom-color text-5xl font-bold my-9">Know what we&apos;re up to</h1>
                         <p className="text-lg text-slate-800 my-2">
-                            Follow us on our various socials to always get the latest updates, news, and<br /> exclusive content from us. Stay connected and be the first to know about<br /> upcoming events, special promotions, and community highlights. Don't miss out!
+                            Follow us on our various socials to always get the latest updates, news, and<br /> exclusive content from us. Stay connected and be the first to know about<br /> upcoming events, special promotions, and community highlights. Don&apos;t miss out!
                         </p>
                         <div className="flex justify-center items-center text-center space-x-4">
                             <a href="#" className="underline text-custom-color">Twitter</a>
@@ -71,7 +71,7 @@ const page = () => {
                                 <p>
                                     The team at UrbanPay is dedicated to move a step ahead to<br /> provide effortless payments for day-to-day activities and many<br /> more!
                                 </p>
-                                <Button children={"Apply for membership"} style={{ backgroundColor: 'white', color: '#A020F0' }} />
+                                <Button text="Apply for membership" style={{ backgroundColor: 'white', color: '#A020F0' }} />
                             </div>
 
                             <div>
