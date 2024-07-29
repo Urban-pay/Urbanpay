@@ -103,7 +103,7 @@ const Page = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed top-0 left-0 w-full h-[70%] border border-customPurple rounded-md bg-white z-50 flex flex-col items-center justify-center"
+            className="fixed top-0 left-0 w-full h-[70%] border border-customPurple rounded-xl bg-white z-50 flex flex-col items-center justify-center"
             initial={{ y: "-100%", opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: "-100%", opacity: 0 }}
@@ -129,40 +129,47 @@ const Page = () => {
                 </motion.div>
               </Link>
             </div>
-            <ul className="flex flex-col items-center space-y-4 w-full md:hidden">
-              <li className="flex items-center space-x-3">
-                <Link href="/" className="flex items-center space-x-2 w-full">
+            <ul className="flex flex-col space-y-4 w-full ml-10 md:hidden">
+              <li className="flex items-center gap-[20px]">
+                <Link href="/" className="flex items-center w-full gap-[20px]">
                   <Image
                     src={home}
-                    className="flex-start"
-                    width={30}
+                    className=""
+                    width={50}
                     height={10}
                     alt="home"
                   />
                   <span
-                    className="text-black hover:text-customPurple cursor-pointer font-medium text-[18px]"
+                    className="text-black hover:text-customPurple cursor-pointer font-bold text-[25px] ml-5"
                     aria-label="Home"
                   >
                     Home
                   </span>
                 </Link>
               </li>
-              <li className="flex items-center space-x-3">
-                <Link href="/ContactUs" className="flex items-center space-x-2">
-                  <Image src={About} width={30} height={10} alt="About" />
+
+              <li className="flex items-center space-x-3 gap-[20px]">
+                <Link
+                  href="/ContactUs"
+                  className="flex items-center space-x-2 gap-[20px]"
+                >
+                  <Image src={About} width={50} height={10} alt="About" />
                   <span
-                    className="text-black hover:bg-customPurple hover:text-white hover:mx-1 hover:rounded-35px cursor-pointer font-medium text-[18px]"
+                    className="text-black hover:text-customPurple  cursor-pointer font-bold text-[25px] ml-5"
                     aria-label="Contact Us"
                   >
                     Contact
                   </span>
                 </Link>
               </li>
-              <li className="flex items-center space-x-3">
-                <Link href="/About" className="flex items-center space-x-2">
-                  <Image src={Contact} width={30} height={10} alt="contact" />
+              <li className="flex items-center space-x-3 gap-[20px]">
+                <Link
+                  href="/About"
+                  className="flex items-center space-x-2 gap-[20px]"
+                >
+                  <Image src={Contact} width={50} height={10} alt="contact" />
                   <span
-                    className="text-black hover:bg-customPurple hover:text-white hover:mx-1 hover:rounded-35px cursor-pointer font-medium text-[18px]"
+                    className="text-black  hover:text-CustomPurple  cursor-pointer font-bold text-[25px] ml-5"
                     aria-label="About"
                   >
                     About
@@ -174,7 +181,7 @@ const Page = () => {
             <div className="flex flex-col md:hidden items-center space-y-2 absolute bottom-4">
               <Link href="/">
                 <motion.span
-                  className="text-lg rounded font-bold py-2 px-4 text-gray-900"
+                  className="text-xl rounded font-bold py-2 px-4 text-gray-900"
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
@@ -184,7 +191,7 @@ const Page = () => {
                   Log in
                 </motion.span>
               </Link>
-              <Link href="/" >
+              <Link href="/">
                 <motion.button
                   className="bg-purple-600 text-white font-bold py-2 px-10 rounded"
                   initial={{ opacity: 0, y: -10 }}

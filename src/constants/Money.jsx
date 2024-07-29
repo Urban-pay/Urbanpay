@@ -14,7 +14,7 @@ const Money = () => {
         />
       </div>
 
-      <div className="md:w-1/2 space-y-5">
+      <div className=" space-y-5">
         <h1 className="text-4xl font-semibold lg:text-5xl">
           It is <b className="text-green-400">your money</b>
           <br /> spend it your way

@@ -12,14 +12,11 @@ const page = () => {
         <main>
             <NavigationBar />
             <div>
-
                 <div
-                    className="my-40 flex justify-center items-center text-center"
-                    data-aos="zoom-in"
-                    data-aos-duration="3000"
+                    className="my-20 md:my-40 flex justify-center items-center text-center"
                 >
                     <div className="w-full md:w-11/12 lg:w-10/12">
-                        <h1 className="text-custom-color1 text-6xl md:text-7xl lg:text-8xl font-extrabold capitalize">
+                        <h1 className="text-custom-color1 text-5xl tracking-wide leading-tight lg:text-8xl font-extrabold capitalize">
                             Simplifying payments to connect the world
                         </h1>
                         <p className="my-3 text-lg text-slate-800">
@@ -62,7 +59,7 @@ const page = () => {
                             <a href="#" className="underline text-custom-color">Facebook</a>
                         </div>
 
-                        <div className="bg-[#921DDA] flex justify-around items-center w-full  h-50 mt-20 py-10 rounded text-white" >
+                        <div className="bg-[#921DDA] flex flex-col-reverse md:flex-row justify-around items-center w-full  h-50 mt-20 py-10 rounded text-white" >
                             <div className='flex-col space-y-4 mx-10'>
                                 <h2 className='md:text-4xl font-bold'>UrbanPay</h2>
                                 <p className='font-medium'>

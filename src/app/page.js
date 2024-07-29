@@ -62,8 +62,7 @@ const Hero = () => {
           <Image src={wallet} alt="wallet" width={500}
             height={100} />
         </div>
-        <div className="flex flex-col p-4 space-y-3 md:w-1/2">
-
+        <div className="flex flex-col p-4 space-y-3">
           <h1 className="text-black text-4xl font-semibold capitalize">
             <span className="text-[#A020F0]">
               1 <span className="uppercase">Card</span> + 1 WALLET = <br />
