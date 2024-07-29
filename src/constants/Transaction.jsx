@@ -4,8 +4,8 @@ import Phone from "../../assets/img/Phone.png";
 
 const Transaction = () => {
   return (
-    <main className="my-10 flex justify-around items-center">
-      <div className="space-y-5">
+    <main className="my-10 flex flex-col items-center p-4 md:flex-row  md:justify-around">
+      <div className="space-y-5 md:w-1/2">
         <h1 className="text-black text-4xl font-semibold">
           Get notified of{" "}
           <span className="text-red-600" style={{ color: "#F00010" }}>

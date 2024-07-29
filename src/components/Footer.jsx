@@ -102,7 +102,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="container mx-auto mt-8">
+      <div className=" mx-auto mt-8 p-4">
         UrbanPay is a cutting-edge financial technology company dedicated to
         transforming the way people transact and manage their finances. We have
         an understanding of urban lifestyles and use that to provide seamless

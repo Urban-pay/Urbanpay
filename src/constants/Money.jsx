@@ -4,7 +4,7 @@ import Button from "../components/Button";
 
 const Money = () => {
   return (
-    <main className="my-10 flex justify-around items-center p-4">
+    <main className="my-10 flex flex-col items-center p-4 md:flex-row  md:justify-around">
       <div className="">
         <Image
           src={cartoon}
@@ -15,7 +15,7 @@ const Money = () => {
       </div>
 
       <div className="md:w-1/2 space-y-5">
-        <h1 className=" text-4xl font-semibold lg:text-5xl">
+        <h1 className="text-4xl font-semibold lg:text-5xl">
           It is <b className="text-green-400">your money</b>
           <br /> spend it your way
         </h1>
