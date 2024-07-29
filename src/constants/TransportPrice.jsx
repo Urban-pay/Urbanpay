@@ -4,7 +4,7 @@ import Bus from "../../assets/img/Bus.png";
 
 const TransportPricesSection = () => {
   return (
-    <div className="my-30 flex items-center justify-around text-center">
+    <main className="my-10 flex flex-col items-center p-4 md:flex-row  md:justify-around">
       <div>
         <Image src={Bus} alt="Bus" width={500} height={100} />
       </div>
@@ -30,7 +30,7 @@ const TransportPricesSection = () => {
           View today&aposs transport price
         </button>
       </div>
-    </div>
+    </main>
   );
 };
 

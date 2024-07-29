@@ -4,7 +4,7 @@ import Phone from "../../assets/img/Phone.png";
 
 const Transaction = () => {
   return (
-    <main className="my-10 flex justify-around items-center">
+    <main className="my-10 flex flex-col items-center p-4 md:flex-row  md:justify-around">
       <div className="space-y-5">
         <h1 className="text-black text-4xl font-semibold">
           Get notified of{" "}

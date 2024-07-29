@@ -12,10 +12,10 @@ const Hero = () => {
   return (
     <>
       <NavigationBar />
-      <div className="my-40">
+      <div className="my-20 md:my-40">
         <div className="flex text-center items-center justify-center">
           <div>
-            <h1 className="text-black space-y-2 lg:text-7xl font-extrabold">
+            <h1 className="text-black space-y-2 tracking-wide text-5xl md:text-7xl font-extrabold">
               There is no need to{'  '}
               <TypeAnimation
                 sequence={[
@@ -32,6 +32,7 @@ const Hero = () => {
                 repeat={Infinity}
               /> <br />about borders anymore
             </h1>
+            <p className='font-medium text-xl my-4'>Welcome to a borderless payment future where simplicity and global connectivity are just a click away </p>
 
             <div className="flex justify-center items-center space-x-4 mt-5">
               <button className="h-10  border-2 border-[#66A966] shadow-lg text-slate-800 flex items-center justify-center px-3 py-6">
@@ -56,30 +57,29 @@ const Hero = () => {
       <Money />
       <Transaction />
       <TransportPrice />
-      <div className="my-40 flex items-center justify-around">
+      <main className="my-10 flex flex-col items-center p-4 md:flex-row  md:justify-around">
         <div className="">
           <Image src={wallet} alt="wallet" width={500}
             height={100} />
         </div>
-        <div className="flex">
-          <div>
-            <h1 className="text-black text-4xl font-semibold capitalize">
-              <span className="text-[#A020F0]">
-                1 <span className="uppercase">Card</span> + 1 WALLET = <br />
-              </span>{" "}
-              Multiple Transaction$
-            </h1>
-            <p className="text-sm text-slate-800 py-3">
-              Say goodbye to juggling wallets and effortlessly<br /> handle your
-              currencies with ease on a single<br /> platform. Experience the freedom
-              and flexibility.
-            </p>
-            <div className="flex-wrap space-x-4">
-              <Button text='Get Started' style={{ backgroundColor: '#A020F0' }} />
-            </div>
+        <div className="flex flex-col p-4 space-y-3">
+          <h1 className="text-black text-4xl font-semibold capitalize">
+            <span className="text-[#A020F0]">
+              1 <span className="uppercase">Card</span> + 1 WALLET = <br />
+            </span>{" "}
+            Multiple Transaction$
+          </h1>
+          <p className="text-sm text-slate-800 py-3">
+            Say goodbye to juggling wallets and effortlessly<br /> handle your
+            currencies with ease on a single<br /> platform. Experience the freedom
+            and flexibility.
+          </p>
+          <div className="flex-wrap space-x-4">
+            <Button text='Get Started' style={{ backgroundColor: '#A020F0' }} />
           </div>
+
         </div>
-      </div>
+      </main>
       <Faqs />
       <Footer />
     </>
