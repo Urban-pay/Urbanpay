@@ -14,12 +14,13 @@ const Money = () => {
         />
       </div>
 
-      <div className=" space-y-5">
-        <h1 className="text-4xl font-semibold lg:text-5xl">
-          It is <b className="text-green-400">your money</b>
-          <br /> spend it your way
+      <div className="space-y-3">
+        <h1 className="text-4xl font-semibold md:text-5xl">
+          It is <span className="text-[#43B671]">your money</span>,
+          <br />
+          spend it your way
         </h1>
-        <p className="text-sm text-slate-800 py-5">
+        <p className="text-md text-slate-800 py-3">
           At our platform, your money is sacred. We respect
           <br /> your funds and never interfere with your
           <br /> financial matters.

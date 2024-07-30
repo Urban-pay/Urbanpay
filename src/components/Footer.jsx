@@ -1,35 +1,49 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import UrbanPaylogo from "../../assets/img/UrbanPaylogo.png";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import playstore from "../../assets/img/playstore.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-white mb-8 mt-48">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
-        <div className="mb-4 md:mb-0 text-center md:text-left">
-          <div className="flex items-center justify-center md:justify-start space-x-4">
-            <Image
-              src={UrbanPaylogo}
-              alt="UrbanPay Logo"
-              width={70}
-              height={70}
-            />
-            <h1 className="text-2xl font-bold">URBANPAY</h1>
+    <footer className="bg-white">
+      <div className="container mt-32 mx-auto flex flex-col md:flex-row items-center justify-between">
+        <div className="flex flex-col">
+          <div className="flex items-center mb-5">
+            <Link href="/">
+              <motion.div
+                className=""
+                animate={{ rotate: 360 }}
+                transition={{ repeat: Infinity, duration: 2, ease: "linear" }}
+              >
+                <Image
+                  src={UrbanPaylogo}
+                  className="w-[100px]"
+                  width={50}
+                  height={12}
+                  alt="UrbanPay Logo"
+                />
+              </motion.div>
+            </Link>
+            <span className="text-lg hidden md:block font-bold leading-6 text-gray-900">
+              URBAN PAY
+            </span>
           </div>
-          <div className="flex flex-col space-y-5">
-            <button className="h-10 rounded-full border-2 border-[#66A966]  shadow-lg text-slate-800 flex items-center justify-center px-3 py-5">
-              {/* add svg */}
-              <p>
-                Get on <span className="font-medium">Google Play</span>
+          <div className="flex flex-col space-y-4">
+            <button className="h-10 border-2 border-[#66A966] shadow-lg text-slate-800 flex items-center justify-center px-3 py-8">
+              <Image src={playstore} width={40} height={40} alt="playstore" />
+              <p className="ml-3">
+                Get on <b className="font-bold">Google Play</b>
               </p>
             </button>
-            <button className="h-10 rounded-full  border-2 shadow-lg border-[#7911BA] text-slate-800 flex items-center justify-center px-3 py-6">
+            <button className="h-10  border-2 shadow-lg border-[#7911BA] text-slate-800 flex items-center justify-center px-3 py-8">
               <svg
-                width="30"
-                height="30"
+                width="40"
+                height="40"
                 viewBox="0 0 70 70"
                 fillRule="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -39,45 +53,74 @@ const Footer = () => {
                   fill="#222222"
                 />
               </svg>
-              <p>
-                Get on <span className="font-medium">App Store</span>
+              <p className="ml-3">
+                Get on <b className="font-bold">App Store</b>
               </p>
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center my-4">
-          <div className="space-y-4 flex flex-col">
-            <h2 className="font-bold text-2xl text-[#7217AA]">Product</h2>
-            <Link href="#" className="">
-              Transfer Money
-            </Link>
-            <Link href="#" className="">
-              Transfer Pricing
-            </Link>
-            <Link href="#" className="">
-              Virtual Cards
-            </Link>
-            <Link href="#" className="">
-              Currency Exchange
-            </Link>
-          </div>
-          <div className="space-y-4 flex flex-col">
-            <h2 className="font-bold text-2xl text-[#7217AA]">Company</h2>
-            <Link href="#">Contact</Link>
-            <Link href="#">Careers</Link>
-            <Link href="#">About</Link>
-            <Link href="#">Blog</Link>
-          </div>
-          <div className="space-y-4 flex flex-col">
-            <h2 className="font-bold text-2xl text-[#7217AA]">Connect</h2>
-            <Link href="#">Twitter</Link>
-            <Link href="#">Instagram</Link>
-            <Link href="#">Linkedin</Link>
-            <Link href="#">Facebook</Link>
-          </div>
+        <div className="grid my-2 text-center space-y-4">
+          <h2
+            href="#"
+            className="font-bold display-5 text-2xl text-[#7217AA] mb-5 "
+          >
+            Product
+          </h2>
+          <Link href="#" className="">
+            Transfer Money
+          </Link>
+          <Link href="#" className="">
+            Transfer Pricing
+          </Link>
+          <Link href="#" className="">
+            Virtual Cards
+          </Link>
+          <Link href="#" className="">
+            Currency Exchange
+          </Link>
+        </div>
+        <div className="grid my-2 text-center space-y-4">
+          <h2
+            href="#"
+            className=" font-bold display-5 text-2xl text-[#7217AA] mb-5"
+          >
+            Company
+          </h2>
+          <Link href="#" className="">
+            Contact
+          </Link>
+          <Link href="#" className="">
+            Careers
+          </Link>
+          <Link href="#" className="">
+            About
+          </Link>
+          <Link href="#" className="">
+            Blog
+          </Link>
+        </div>
+        <div className="grid my-2 text-center space-y-4">
+          <h2
+            href="#"
+            className=" font-bold display-5 text-2xl text-[#7217AA] mb-5 "
+          >
+            Connect
+          </h2>
+          <Link href="#" className="">
+            Twitter
+          </Link>
+          <Link href="#" className="">
+            Instagram
+          </Link>
+          <Link href="#" className="">
+            Linkedin
+          </Link>
+          <Link href="#" className="">
+            Facebook
+          </Link>
         </div>
       </div>
-      <div className="mx-auto mt-8 p-4 text-center">
+      <div className="container mx-auto my-10">
         UrbanPay is a cutting-edge financial technology company dedicated to
         transforming the way people transact and manage their finances. We have
         an understanding of urban lifestyles and use that to provide seamless

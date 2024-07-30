@@ -67,7 +67,7 @@ const Page = () => {
         </ul>
       </div>
 
-      <div className="hidden md:flex items-center space-x-4">
+      <div className="hidden md:flex  items-center space-x-4">
         <Link href="/">
           <motion.span
             className="text-lg rounded font-bold py-2 px-4 text-gray-900"
