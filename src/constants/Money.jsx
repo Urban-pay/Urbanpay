@@ -1,5 +1,5 @@
 import Image from "next/image";
-import cartoon from "../../assets/img/cartoon.png";
+import cartoon from "../../public/img/cartoon.png";
 import Button from "../components/Button";
 
 const Money = () => {

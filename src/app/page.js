@@ -1,12 +1,12 @@
 "use client"
 import React from 'react';
 import { Money, Transaction, TransportPrice, Faqs } from '../constants/index';
-import wallet from "../../assets/img/wallet.png";
+import wallet from "../../public/img/wallet.png";
 import Image from 'next/image';
 import { NavigationBar, Footer, Button } from "../components/index";
 import { TypeAnimation } from 'react-type-animation';
 import Link from 'next/link';
-import playstore from '../../assets/img/playstore.png'
+import playstore from '../../public/img/playstore.png'
 
 
 

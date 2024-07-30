@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import UrbanPaylogo from "../../assets/img/UrbanPaylogo.png";
+import UrbanPaylogo from "../../public/img/UrbanPaylogo.png";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
-import home from "../../assets/img/home.png";
-import Contact from "../../assets/img/contact.png";
-import About from "../../assets/img/about.png";
+import home from "../../public/img/home.png";
+import Contact from "../../public/img/contact.png";
+import About from "../../public/img/about.png";
 
 const Page = () => {
   const [isOpen, setIsOpen] = useState(false);

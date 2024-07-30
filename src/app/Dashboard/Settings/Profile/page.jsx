@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import Image from "next/image";
-import display from "../../../../../assets/img/dashoard/display.jpg";
+import display from "../../../../../public/img/dashoard/display.jpg";
 import { useRouter } from "next/navigation";
 
 const customStyles = {

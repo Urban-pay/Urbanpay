@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Display from "../../../../assets/img/dashoard/display.jpg";
+import Display from "../../../../public/img/dashoard/display.jpg";
 import BottomNav from "../../../components/BottomNav";
 
 const Page = () => {

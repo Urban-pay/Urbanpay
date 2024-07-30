@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Bus from "../../assets/img/Bus.png";
+import Bus from "../../public/img/Bus.png";
 
 const TransportPricesSection = () => {
   return (

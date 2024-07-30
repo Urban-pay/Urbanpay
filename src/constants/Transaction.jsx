@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Phone from "../../assets/img/Phone.png";
+import Phone from "../../public/img/Phone.png";
 
 const Transaction = () => {
   return (

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import BackBtn from '../../../../components/BackBtn';
 import Image from 'next/image';
-import deleteIcon from '../../../../../assets/img/dashoard/deleteIcon.png';
+import deleteIcon from '../../../../../public/img/dashoard/deleteIcon.png';
 
 
 

@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import Image from 'next/image';
-import display from '../../../../../assets/img/dashoard/display.jpg'
+import display from '../../../../../public/img/dashoard/display.jpg'
 import BackBtn from '../../../../components/BackBtn';
 
 const Page = () => {

@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import UrbanPaylogo from "../../assets/img/UrbanPaylogo.png";
+import UrbanPaylogo from "../../public/img/UrbanPaylogo.png";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import playstore from "../../assets/img/playstore.png";
+import playstore from "../../public/img/playstore.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

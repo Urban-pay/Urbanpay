@@ -2,9 +2,9 @@
 import React from 'react'
 import { NavigationBar, Footer } from "../../components/index";
 import { Button } from '../../components/index';
-import welcome from '../../../assets/img/welcome.png';
+import welcome from '../../../public/img/welcome.png';
 import Image from 'next/image';
-import Frame from '../../../assets/img/Frame.png'
+import Frame from '../../../public/img/Frame.png'
 
 
 
