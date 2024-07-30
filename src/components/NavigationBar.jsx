@@ -5,9 +5,9 @@ import UrbanPaylogo from "../../public/img/UrbanPaylogo.png";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
-import home from "../../public/img/home.png";
-import Contact from "../../public/img/contact.png";
-import About from "../../public/img/about.png";
+// import home from "../../public/img/home.png";
+// import Contact from "../../public/img/contact.png";
+// import About from "../../public/img/about.png";
 
 const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +42,7 @@ const Page = () => {
         <ul className="flex justify-around">
           <Link href="/">
             <li
-              className="text-black hover:bg-customPurple hover:text-white hover:mx-1 hover:rounded-35px cursor-pointer font-medium text-[18px]"
+              className="text-black hover:bg-customPurple hover:text-white hover:mx-1 hover:rounded-35px cursor-pointer font-medium md:text-[15px] lg:text-[18px]"
               aria-label="Home"
             >
               Home
@@ -50,7 +50,7 @@ const Page = () => {
           </Link>
           <Link href="/About">
             <li
-              className="text-black hover:bg-customPurple hover:text-white hover:mx-1 hover:rounded-35px cursor-pointer font-medium text-[18px]"
+              className="text-black hover:bg-customPurple hover:text-white hover:mx-1 hover:rounded-35px cursor-pointer font-medium md:text-[15px] lg:text-[18px]"
               aria-label="About"
             >
               About
@@ -58,7 +58,7 @@ const Page = () => {
           </Link>
           <Link href="/ContactUs">
             <li
-              className="text-black hover:bg-customPurple hover:text-white hover:mx-1 hover:rounded-35px cursor-pointer font-medium text-[18px]"
+              className="text-black hover:bg-customPurple hover:text-white hover:mx-1 hover:rounded-35px cursor-pointer font-medium md:text-[15px] lg:text-[18px]"
               aria-label="Contact Us"
             >
               Contact Us
@@ -132,13 +132,13 @@ const Page = () => {
             <ul className="flex flex-col space-y-4 w-full ml-10 md:hidden">
               <li className="flex items-center gap-[20px]">
                 <Link href="/" className="flex items-center w-full gap-[20px]">
-                  <Image
+                  {/* <Image
                     src={home}
                     className=""
                     width={50}
                     height={10}
                     alt="home"
-                  />
+                  /> */}
                   <span
                     className="text-black hover:text-customPurple cursor-pointer font-bold text-[25px] ml-5"
                     aria-label="Home"
@@ -153,7 +153,7 @@ const Page = () => {
                   href="/ContactUs"
                   className="flex items-center space-x-2 gap-[20px]"
                 >
-                  <Image src={About} width={50} height={10} alt="About" />
+                  {/* <Image src={About} width={50} height={10} alt="About" /> */}
                   <span
                     className="text-black hover:text-customPurple  cursor-pointer font-bold text-[25px] ml-5"
                     aria-label="Contact Us"
@@ -167,7 +167,7 @@ const Page = () => {
                   href="/About"
                   className="flex items-center space-x-2 gap-[20px]"
                 >
-                  <Image src={Contact} width={50} height={10} alt="contact" />
+                  {/* <Image src={Contact} width={50} height={10} alt="contact" /> */}
                   <span
                     className="text-black  hover:text-CustomPurple  cursor-pointer font-bold text-[25px] ml-5"
                     aria-label="About"

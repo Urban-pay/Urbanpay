@@ -59,7 +59,7 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        <div className="grid my-2 text-center space-y-4">
+        <div className="grid grid-cols-1 my-2 text-center space-y-4">
           <h2
             href="#"
             className="font-bold display-5 text-2xl text-[#7217AA] mb-5 "
@@ -120,7 +120,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="container mx-auto my-10">
+      <div className="container mx-auto my-10 md:p-4">
         UrbanPay is a cutting-edge financial technology company dedicated to
         transforming the way people transact and manage their finances. We have
         an understanding of urban lifestyles and use that to provide seamless
