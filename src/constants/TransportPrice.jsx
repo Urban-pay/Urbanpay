@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Bus from "../../assets/img/Bus.png";
+import Bus from "../../public/img/Bus.png";
 
 const TransportPricesSection = () => {
   return (
@@ -9,16 +9,16 @@ const TransportPricesSection = () => {
         <Image src={Bus} alt="Bus" width={500} height={100} />
       </div>
 
-      <div className="space-y-5">
-        <h1 className="text-black text-4xl font-semibold capitalize">
+      <div className="space-y-3">
+        <h1 className="text-black text-4xl md:text-5xl font-semibold capitalize">
           Get real-time{" "}
           <span className="text-red-600" style={{ color: "#FF971D" }}>
             local
             <br />
           </span>{" "}
-          transport prices in seconds
+          transport prices
         </h1>
-        <p className="text-sm text-slate-800 py-5">
+        <p className="text-md text-slate-800 py-3">
           You can get real-time prices for both local and
           <br /> commercial vehicles. This will keep you abreast of
           <br /> up-to-date pricing and help you plan accordingly.
@@ -27,7 +27,7 @@ const TransportPricesSection = () => {
           className="h-10 rounded-md bg-orange-600 text-white px-3"
           style={{ backgroundColor: "#FF971D" }}
         >
-          View today&aposs transport price
+          View today&apos;s transport price
         </button>
       </div>
     </main>

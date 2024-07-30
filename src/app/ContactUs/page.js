@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavigationBar } from '../../components/index'
+import { NavigationBar, Footer } from '../../components/index'
 
 const Page = () => {
     return (
@@ -47,6 +47,7 @@ const Page = () => {
                     </div>
                 </form>
             </div>
+            <Footer />
         </main>
     )
 }

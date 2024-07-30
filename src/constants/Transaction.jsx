@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import Phone from "../../assets/img/Phone.png";
+import Phone from "../../public/img/Phone.png";
 
 const Transaction = () => {
   return (
     <main className="my-10 flex flex-col items-center p-4 md:flex-row  md:justify-around">
-      <div className="space-y-5">
-        <h1 className="text-black text-4xl font-semibold">
+      <div className="space-y-3">
+        <h1 className="text-black text-4xl md:text-5xl font-semibold">
           Get notified of{" "}
           <span className="text-red-600" style={{ color: "#F00010" }}>
             fake
@@ -15,7 +15,7 @@ const Transaction = () => {
           in
           <br /> seconds
         </h1>
-        <p className="text-sm text-slate-800 py-5">
+        <p className="text-md text-slate-800 py-3">
           We notify you when a fake transaction has been
           <br /> detected through our system&aposs continuous analysis.
         </p>

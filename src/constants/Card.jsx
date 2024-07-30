@@ -1,5 +1,5 @@
 import React from "react";
-import Phone from "../../assets/img/Phone.png";
+import Phone from "../../public/img/Phone.png";
 import Image from "next/image";
 
 const Card = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import display from "../../../../../assets/img/dashoard/display.jpg";
+import display from "../../../../../public/img/dashoard/display.jpg";
 import Image from "next/image";
 import BackBtn from "../../../../components/BackBtn";
 
