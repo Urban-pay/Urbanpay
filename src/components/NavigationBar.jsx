@@ -27,14 +27,14 @@ const Page = () => {
           >
             <Image
               src={UrbanPaylogo}
-              className="w-[100px]"
+              className="w-[100px] md:w-[80px]"
               width={50}
               height={12}
               alt="UrbanPay Logo"
             />
           </motion.div>
         </Link>
-        <span className="text-lg hidden md:block font-bold leading-6 text-gray-900">
+        <span className="lg:text-lg md:text-sm hidden md:block font-bold leading-6 text-gray-900">
           URBAN PAY
         </span>
       </div>
@@ -70,7 +70,7 @@ const Page = () => {
       <div className="hidden md:flex  items-center space-x-4">
         <Link href="/">
           <motion.span
-            className="text-lg rounded font-bold py-2 px-4 text-gray-900"
+            className="lg:text-lg md:text-sm rounded font-bold py-2 px-4 text-gray-900"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
