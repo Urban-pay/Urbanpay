@@ -416,7 +416,9 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <BottomNav />
+        <div className="relative">
+          <BottomNav />
+        </div>
       </div>
     </main>
   );

@@ -1,7 +1,16 @@
+"use client"
 import BottomNav from "../../../components/BottomNav";
-import React from "react";
+import React, { useState } from "react";
+
 
 const Transactions = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className=" flex items-center justify-center h-screen text-center">
       <div className="p-3 h-full w-96">
@@ -11,32 +20,40 @@ const Transactions = () => {
               <h1 className="w-full my-2 text-2xl font-extrabold">Transactions</h1>
             </div>
             <div className="flex space-x-2">
-              <div className="relative">
-                <svg
-                  id="triggerId"
-                  data-bs-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="35"
-                  height="35"
-                  viewBox="0 0 35 35"
-                  fill="none"
-                >
-                  <circle cx="17.5" cy="17.5" r="17.5" fill="#F5F0FF" />
-                  <path
-                    d="M28 22V12C28 11.4696 27.7893 10.9609 27.4142 10.5858C27.0391 10.2107 26.5304 10 26 10H12C11.4696 10 10.9609 10.2107 10.5858 10.5858C10.2107 10.9609 10 11.4696 10 12V26C10 26.5304 10.2107 27.0391 10.5858 27.4142C10.9609 27.7893 11.4696 28 12 28H22M28 22V22.172C27.9999 22.7024 27.7891 23.211 27.414 23.586L23.586 27.414C23.211 27.7891 22.7024 27.9999 22.172 28H22M28 22H24C23.4696 22 22.9609 22.2107 22.5858 22.5858C22.2107 22.9609 22 23.4696 22 24V28M14 14H24M14 18H24M14 22H18"
-                    stroke="#222222"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-                <div className="dropdown-menu absolute hidden mt-2 py-2 w-48 bg-white rounded-lg shadow-xl">
-                  <h6 className="font-bold dropdown-header">All Transactions</h6>
-                  <div className="dropdown-divider"></div>
-                  <a className="dropdown-item disabled" href="#">Sent</a>
-                  <a className="dropdown-item disabled" href="#">Received</a>
+              <div className="flex space-x-2">
+                <div className="relative">
+                  <svg
+                    id="triggerId"
+                    onClick={toggleDropdown}
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="35"
+                    viewBox="0 0 35 35"
+                    fill="none"
+                    className="cursor-pointer"
+                  >
+                    <circle cx="17.5" cy="17.5" r="17.5" fill="#F5F0FF" />
+                    <path
+                      d="M28 22V12C28 11.4696 27.7893 10.9609 27.4142 10.5858C27.0391 10.2107 26.5304 10 26 10H12C11.4696 10 10.9609 10.2107 10.5858 10.5858C10.2107 10.9609 10 11.4696 10 12V26C10 26.5304 10.2107 27.0391 10.5858 27.4142C10.9609 27.7893 11.4696 28 12 28H22M28 22V22.172C27.9999 22.7024 27.7891 23.211 27.414 23.586L23.586 27.414C23.211 27.7891 22.7024 27.9999 22.172 28H22M28 22H24C23.4696 22 22.9609 22.2107 22.5858 22.5858C22.2107 22.9609 22 23.4696 22 24V28M14 14H24M14 18H24M14 22H18"
+                      stroke="#222222"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+
+                  {isOpen && (
+                    <div className="absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-10">
+                      <h6 className="font-bold px-4 py-2">All Transactions</h6>
+                      <div className="border-t border-gray-200"></div>
+                      <a className="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="#">
+                        Sent
+                      </a>
+                      <a className="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="#">
+                        Received
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
 

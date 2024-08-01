@@ -8,7 +8,10 @@ const BottomNav = () => {
   const currentPath = router.pathname;
 
   return (
-    <div className="w-full bottom-0" style={{ position: "sticky" }}>
+    <div
+      className="w-[80%] ml-10 md:ml-0 md:w-full bottom-0"
+      style={{ position: "sticky" }}
+    >
       <div className="flex justify-between py-4">
         <div className="navigation-menu-home">
           <Link href="/Dashboard/Home">

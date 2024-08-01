@@ -17,11 +17,10 @@ const Page = () => {
                 </div>
 
                 <div className="space-y-6">
-
-                    <ul className="flex justify-center w-full space-x-4">
+                    <ul className="flex justify-center w-full space-x-4 my-5">
                         <li className="" role="presentation">
                             <button
-                                className={`nav-link ${activeTab === 'home' ? 'text-dark' : 'text-gray-500'}`}
+                                className={`nav-link ${activeTab === 'home' ? 'bg-[#E0D5F7] px-2 py-2 rounded-md' : 'text-gray-500'}`}
                                 onClick={() => setActiveTab('home')}
                             >
                                 Virtual Card
@@ -29,7 +28,7 @@ const Page = () => {
                         </li>
                         <li className="" role="presentation">
                             <button
-                                className={` ${activeTab === 'profile' ? 'text-dark' : 'text-gray-500'}`}
+                                className={` ${activeTab === 'profile' ? 'bg-[#E0D5F7] px-2 py-2 rounded-md' : 'text-gray-500'}`}
                                 onClick={() => setActiveTab('profile')}
                             >
                                 Physical Card
@@ -41,7 +40,7 @@ const Page = () => {
                     <div className="tab-content">
                         {activeTab === 'home' && (
                             <div className="tab-pane">
-                                <div className="w-full">
+                                <div className="w-full py-8">
                                     <Image
                                         src={card}
                                         alt="Physical Card Design"
@@ -111,7 +110,7 @@ const Page = () => {
                         )}
                         {activeTab === 'profile' && (
                             <div className="tab-pane">
-                                <div className="w-full">
+                                <div className="w-full py-8">
                                     <Image
                                         src={card}
                                         alt="Physical Card Design"
