@@ -30,7 +30,7 @@ const Page = () => {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="flex items-center justify-center h-screen text-center">
+    <div className="flex items-center justify-center h-screen text-center ">
       <div className="p-3 w-[400px] h-full">
         <div className="flex justify-start pt-12">
           <div className="flex items-start justify-start mt-3 text-start">
@@ -58,16 +58,18 @@ const Page = () => {
         </div>
 
         <div className="flex justify-start mb-6 pt-6">
-          <div className="flex items-center justify-center mr-10">
-            <Image src={display} alt="Profile" />
-          </div>
-          <div>
-            <h1 className="w-full my-2 font-light text-xl">Stanley Drey</h1>
-            <div className="flex justify-between w-full">
-              <p className="px-1 text-sm text-custom-color">@drey</p>
-              <span className="px-1 text-sm rounded-md bg-custom-color text-white">
-                Tier 0
-              </span>
+          <div className="flex justify-start pt-12 mb-12">
+            <div className="flex items-center justify-center mr-10">
+              <Image src={display} alt="" />
+            </div>
+            <div className="">
+              <h1 className="w-full my-2 font-light text-1xl">Stanley Drey</h1>
+              <div className="flex justify-between w-full">
+                <p className="px-1 text-sm text-customPurple">@drey</p>
+                <span className="px-1 text-sm rounded-md bg-[#E0D5F7]">
+                  Tier 0
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -99,7 +101,7 @@ const Page = () => {
           <div className="w-full my-7">
             <button
               onClick={openModal}
-              className="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="text-white bg-customPurple  focus:outline-none focus:ring-blue-300 font-medium text-sm w-full px-5 py-2.5 text-center"
             >
               Save Changes
             </button>
