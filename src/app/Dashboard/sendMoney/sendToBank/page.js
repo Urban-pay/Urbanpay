@@ -114,7 +114,7 @@ const Page = () => {
                         >
                             <li className="nav-item" role="presentation">
                                 <button
-                                    className="nav-link active text-dark"
+                                    className={`${activeTab === 'NewTransfer' ? 'bg-[#E0D5F7] px-2 py-2 rounded-md' : ''} nav-link active text-dark`}
                                     onClick={() => setActiveTab('NewTransfer')}
                                 >
                                     New Transfer
@@ -122,7 +122,7 @@ const Page = () => {
                             </li>
                             <li className="nav-item" role="presentation">
                                 <button
-                                    className="nav-link text-dark"
+                                    className={`${activeTab === 'Beneficiaries' ? 'bg-[#E0D5F7] px-2 py-2 rounded-md' : ''} nav-link text-dark`}
                                     onClick={() => setActiveTab('Beneficiaries')}
                                 >
                                     Beneficiaries
@@ -241,7 +241,7 @@ const Page = () => {
                                             <div className="text-start">
                                                 <label
                                                     for="search"
-                                                    className="mb-2 text-md font-medium text-gray-900 dark:text-white"
+                                                    className="mb-2 text-md font-medium text-gray-900"
                                                 >Bank</label
                                                 >
                                                 <div className="relative">
@@ -268,7 +268,7 @@ const Page = () => {
                                                         type="search"
                                                         id="bank"
                                                         name="bank"
-                                                        className="block w-full px-5 p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                                        className="block w-full px-5 p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                                         placeholder="Search"
                                                         required
                                                     />
@@ -277,14 +277,14 @@ const Page = () => {
                                             <div className="text-start">
                                                 <label
                                                     for="last_name"
-                                                    className="block mb-2 text-md font-medium text-gray-900 dark:text-white"
+                                                    className="block mb-2 text-md font-medium text-gray-900"
                                                 >Account Number</label
                                                 >
                                                 <input
                                                     type="number"
                                                     id="acctnumber"
                                                     name="acctnumber"
-                                                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                                     placeholder=""
                                                     required
                                                 />
@@ -293,14 +293,14 @@ const Page = () => {
                                             <div className="text-start">
                                                 <label
                                                     for="company"
-                                                    className="block mb-2 text-md font-medium text-gray-900 dark:text-white"
+                                                    className="block mb-2 text-md font-medium text-gray-900"
                                                 >Amount</label
                                                 >
                                                 <input
                                                     type="number"
                                                     id="amount"
                                                     name="amount"
-                                                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                                     placeholder=""
                                                     required
                                                 />
@@ -308,14 +308,14 @@ const Page = () => {
                                             <div className="text-start">
                                                 <label
                                                     for="phone"
-                                                    className="block mb-2 text-md font-medium text-gray-900 dark:text-white"
+                                                    className="block mb-2 text-md font-medium text-gray-900"
                                                 >Description</label
                                                 >
                                                 <input
                                                     type="tel"
                                                     id="Description"
                                                     name="Description"
-                                                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                                     placeholder="(optional)"
                                                     required
                                                 />
@@ -336,7 +336,7 @@ const Page = () => {
                                         <div>
                                             <button
                                                 type="submit"
-                                                className="text-white card-btn focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                                className="text-white bg-[#632FD9] card-btn focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full px-5 py-2.5 text-center "
                                             >
                                                 <a
                                                     href="/Dashboard/sendMoney/sendToBank/Verify"

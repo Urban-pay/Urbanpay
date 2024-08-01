@@ -73,7 +73,7 @@ const Page = () => {
                                 </div>
 
                                 <Link
-                                    href="/Dashboard/sendMoney/sendToUrban"
+                                    href="/Dashboard/sendMoney/sendToBank"
                                     class="justify-center mt-2 text-center text-decoration-none align-center d-flex"
                                 ><svg
                                     xmlns="http://www.w3.org/2000/svg"
