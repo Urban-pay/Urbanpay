@@ -1,18 +1,22 @@
 "use client"
-import React, { useState } from 'react'
-import Image from 'next/image'
-import display from '../../../../public/img/dashoard/display.jpg'
-import Link from 'next/link'
-import BottomNav from '../../../components/BottomNav'
+import React, { useState } from 'react';
+import Image from 'next/image';
+import display from '../../../../public/img/dashoard/display.jpg';
+import Link from 'next/link';
+import BottomNav from '../../../components/BottomNav';
+import DeleteModal from '../../../constants/DeleteModal';
 
 
 const Page = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const openModal = () => setIsOpen(true);
+    const closeModal = () => setIsOpen(false);
 
     const [isChecked, setIsChecked] = useState(true);
 
     const handleChange = (e) => {
         setIsChecked(!isChecked);
-        e.preventDefault();
     };
 
     return (
@@ -27,8 +31,8 @@ const Page = () => {
                             <div className="">
                                 <h1 className="w-full my-2 font-light text-1xl">Stanley Drey</h1>
                                 <div className="flex justify-between w-full">
-                                    <p className="px-1 text-sm custom-color">@drey</p>
-                                    <span className="px-1 text-sm rounded-md span-color custom-color"
+                                    <p className="px-1 text-sm text-customPurple">@drey</p>
+                                    <span className="px-1 text-sm rounded-md bg-[#E0D5F7]"
                                     >Tier 0</span
                                     >
                                 </div>
@@ -356,8 +360,7 @@ const Page = () => {
                                     >
                                         Shake to send
                                     </h1>
-                                    <Link
-                                        href=""
+                                    <button
                                         className="justify-center mt-2 text-center text-decoration-none align-center d-flex"
                                     ><div
                                         className="form-check form-switch"
@@ -366,20 +369,18 @@ const Page = () => {
                                             <label className="inline-flex items-center cursor-pointer">
                                                 <input
                                                     type="checkbox"
-
                                                     className="sr-only peer"
                                                     onChange={handleChange}
                                                 />
                                                 <div
                                                     className="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
                                                 ></div>
-
                                             </label>
                                         </div>
-                                    </Link>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="flex">
+                            <div className="flex items-center">
                                 <svg
                                     width="60"
                                     height="60"
@@ -402,17 +403,15 @@ const Page = () => {
                                     />
                                 </svg>
 
-                                <div class="flex justify-between w-full mt-2">
+                                <div className="flex justify-between w-full mt-2">
                                     <h1
-                                        class="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
+                                        className="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
                                     >
                                         Logout
                                     </h1>
-                                    <Link
-                                        href="/"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#secmodal"
-                                        class="justify-center mt-2 text-center text-decoration-none align-center d-flex"
+                                    <button
+                                        onClick={openModal}
+                                        className="justify-center mt-2 text-center text-decoration-none align-center d-flex"
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -428,75 +427,43 @@ const Page = () => {
                                                 fillRule="#9C9C9C"
                                             />
                                         </svg>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div class="flex">
-                                <svg
-                                    width="60"
-                                    height="60"
-                                    viewBox="0 0 40 40"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M0.5 7C0.5 3.41015 3.41015 0.5 7 0.5H39.5V33C39.5 36.5899 36.5899 39.5 33 39.5H0.5V7Z"
-                                        fill="#BCBCFF"
-                                    />
-                                    <path
-                                        d="M0.5 7C0.5 3.41015 3.41015 0.5 7 0.5H39.5V33C39.5 36.5899 36.5899 39.5 33 39.5H0.5V7Z"
-                                        stroke="#0000C1"
-                                    />
-                                    <path
-                                        d="M16.8104 10L13.1904 13.63M23.1904 10L26.8104 13.63"
-                                        stroke="black"
-                                        strokeWidth="1.5"
-                                        strokeMiterlimit="10"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    />
-                                    <path
-                                        d="M10 15.8516C10 14.0016 10.99 13.8516 12.22 13.8516H27.78C29.01 13.8516 30 14.0016 30 15.8516C30 18.0016 29.01 17.8516 27.78 17.8516H12.22C10.99 17.8516 10 18.0016 10 15.8516Z"
-                                        stroke="black"
-                                        strokeWidth="1.5"
-                                    />
-                                    <path
-                                        d="M17.76 22V25.55M22.36 22V25.55M11.5 18L12.91 26.64C13.23 28.58 14 30 16.86 30H22.89C26 30 26.46 28.64 26.82 26.76L28.5 18"
-                                        stroke="black"
-                                        strokeWidth="1.5"
-                                        strokeLinecap="round"
-                                    />
-                                </svg>
-
-                                <div class="flex justify-between w-full mt-2">
-                                    <h1
-                                        class="justify-center ml-2 text-2xl font-bold text-start align-center d-flex"
-                                    >
-                                        Delete account
-                                    </h1>
-                                    <Link
-                                        href=""
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#modalId"
-                                        class="justify-center mt-2 text-center text-decoration-none align-center d-flex"
-                                    >
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="16"
-                                            height="16"
-                                            viewBox="0 0 16 16"
-                                            fillRule="none"
+                                    </button>
+                                    {isOpen && (
+                                        <div
+                                            className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50"
+                                            aria-labelledby="secmodalTitle"
+                                            aria-hidden="true"
                                         >
-                                            <path
-                                                fillrule-rule="evenodd"
-                                                clipRule="evenodd"
-                                                d="M4.64645 1.64645C4.84171 1.45118 5.15829 1.45118 5.35355 1.64645L11.3536 7.64645C11.5488 7.84171 11.5488 8.15829 11.3536 8.35355L5.35355 14.3536C5.15829 14.5488 4.84171 14.5488 4.64645 14.3536C4.45118 14.1583 4.45118 13.8417 4.64645 13.6464L10.2929 8L4.64645 2.35355C4.45118 2.15829 4.45118 1.84171 4.64645 1.64645Z"
-                                                fillRule="#9C9C9C"
-                                            />
-                                        </svg>
-                                    </Link>
+                                            <div className="bg-white rounded-lg overflow-hidden shadow-xl max-w-sm w-full">
+                                                <div className="modal-content p-4">
+                                                    <div className="text-center">
+                                                        <h1 className="my-3 font-bold text-md">
+                                                            Are you sure you want to log out?
+                                                        </h1>
+                                                        <div className="my-6">
+                                                            <Link
+                                                                href="/"
+                                                                className="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm rounded-lg px-5 py-2.5 text-center"
+                                                            >
+                                                                Yes
+                                                            </Link>
+                                                        </div>
+                                                        <div className="my-6">
+                                                            <button
+                                                                onClick={closeModal}
+                                                                className="bg-transparent text-blue-600 hover:text-blue-700 rounded-lg border border-blue-600 px-5 py-2.5 text-sm text-center"
+                                                            >
+                                                                No
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
+                            <DeleteModal />
                         </div>
                     </div>
                     <BottomNav />
