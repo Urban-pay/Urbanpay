@@ -31,7 +31,7 @@ const Page = () => {
                 autoComplete="Fullname"
                 required
                 placeholder="Enter your Fullname"
-                className="w-full rounded-md border py-1.5 text-gray-900 shadow-sm placeholder-gray-400 sm:text-sm sm:leading-6"
+                className="w-full rounded-md border py-1.5 text-gray-900 shadow-sm placeholder-gray-400 sm:text-sm sm:leading-6 px-4"
               />
             </div>
           </div>
@@ -47,7 +47,7 @@ const Page = () => {
                 autoComplete="email"
                 required
                 placeholder="Enter your email"
-                className="w-full rounded-md border py-1.5 text-gray-900 shadow-sm placeholder-gray-400 sm:text-sm sm:leading-6"
+                className="w-full rounded-md border py-1.5 text-gray-900 shadow-sm placeholder-gray-400 sm:text-sm sm:leading-6 px-4"
               />
             </div>
           </div>
@@ -63,7 +63,7 @@ const Page = () => {
                 autoComplete="username"
                 required
                 placeholder="Enter your username"
-                className="w-full rounded-md border py-1.5 text-gray-900 shadow-sm placeholder-gray-400 sm:text-sm sm:leading-6"
+                className="w-full rounded-md border py-1.5 text-gray-900 shadow-sm placeholder-gray-400 sm:text-sm sm:leading-6 px-4"
               />
             </div>
           </div>
@@ -79,7 +79,7 @@ const Page = () => {
                 autoComplete="new-password"
                 required
                 placeholder="Enter your password"
-                className="w-full rounded-md border py-1.5 text-gray-900 shadow-sm placeholder-gray-400 sm:text-sm sm:leading-6"
+                className="w-full rounded-md border py-1.5 text-gray-900 shadow-sm placeholder-gray-400 sm:text-sm sm:leading-6 px-4"
               />
             </div>
           </div>

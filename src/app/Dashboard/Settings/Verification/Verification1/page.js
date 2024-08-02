@@ -74,7 +74,7 @@ const Page = () => {
                     <div className="w-full my-7">
                         <button
                             onClick={openModal}
-                            className="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full px-5 py-2.5 text-center "
+                            className="text-white bg-[#632FD9] focus:ring-4 focus:outline-none  font-medium text-sm w-full px-5 py-2.5 text-center"
                         >
                             Upgrade Account
                         </button>

@@ -14,7 +14,8 @@ const Page = () => {
 
         <form className="space-y-6" action="#" method="POST">
           <div>
-            <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+
+            <label htmlFor="email" className="flex items-center justify-between text-sm font-medium leading-6 text-gray-900">
               Email address
             </label>
             <div className="mt-2">
@@ -25,7 +26,7 @@ const Page = () => {
                 autoComplete="email"
                 required
                 placeholder="Enter your email"
-                className="w-full rounded-md border py-1.5 text-gray-900 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                className="w-full rounded-md border py-1.5 px-2 text-gray-900 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -64,7 +65,7 @@ const Page = () => {
             </button>
             <p className="mt-10 text-center text-sm text-gray-500">
               Don’t have an account?{" "}
-              <Link href="/create-account" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+              <Link href="/Dashboard/CreateAccount" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
                 Start a Register
               </Link>
             </p>

@@ -2,6 +2,9 @@
 import { useState } from 'react';
 import BottomNav from "../../../components/BottomNav";
 import Image from 'next/image';
+import card from '../../../../public/img/card.png';
+import Link from 'next/link';
+
 
 const Page = () => {
     const [activeTab, setActiveTab] = useState('home');
@@ -14,11 +17,10 @@ const Page = () => {
                 </div>
 
                 <div className="space-y-6">
-
-                    <ul className="flex justify-center w-full space-x-4">
+                    <ul className="flex justify-center w-full space-x-4 my-5">
                         <li className="" role="presentation">
                             <button
-                                className={`nav-link ${activeTab === 'home' ? 'text-dark' : 'text-gray-500'}`}
+                                className={`nav-link ${activeTab === 'home' ? 'bg-[#E0D5F7] px-2 py-2 rounded-md' : 'text-gray-500'}`}
                                 onClick={() => setActiveTab('home')}
                             >
                                 Virtual Card
@@ -26,7 +28,7 @@ const Page = () => {
                         </li>
                         <li className="" role="presentation">
                             <button
-                                className={` ${activeTab === 'profile' ? 'text-dark' : 'text-gray-500'}`}
+                                className={` ${activeTab === 'profile' ? 'bg-[#E0D5F7] px-2 py-2 rounded-md' : 'text-gray-500'}`}
                                 onClick={() => setActiveTab('profile')}
                             >
                                 Physical Card
@@ -38,36 +40,15 @@ const Page = () => {
                     <div className="tab-content">
                         {activeTab === 'home' && (
                             <div className="tab-pane">
-                                <div className="w-full">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width=""
-                                        height="230"
-                                        viewBox="0 0 366 230"
-                                        fill="none"
-                                    >
-                                        <rect
-                                            width="366"
-                                            height="230"
-                                            rx="4"
-                                            fill="url(#pattern0)"
-                                        />
-                                        <defs>
-                                            <pattern
-                                                id="pattern0"
-                                                patternContentUnits="objectBoundingBox"
-                                                width="1"
-                                                height="1"
-                                            >
-                                                <use
-                                                    xlinkHref="#image0_3660_19020"
-                                                    transform="scale(0.000244141 0.000388502)"
-                                                />
-                                            </pattern>
-
-                                        </defs>
-                                    </svg>
+                                <div className="w-full py-8">
+                                    <Image
+                                        src={card}
+                                        alt="Physical Card Design"
+                                        width={350}
+                                        height={200}
+                                    />
                                 </div>
+
                                 <div className="my-10">
                                     <button className="w-full p-2 text-white bg-blue-500 rounded-md">
                                         Get card
@@ -107,7 +88,7 @@ const Page = () => {
                                     </svg>
                                     <div className="flex justify-between w-full mt-3">
                                         <h1 className="ml-2 text-2xl font-bold">Save Cards</h1>
-                                        <a href="" className="mt-2">
+                                        <Link href="" className="mt-2">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 width="16"
@@ -122,19 +103,19 @@ const Page = () => {
                                                     fill="#9C9C9C"
                                                 />
                                             </svg>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
                         )}
                         {activeTab === 'profile' && (
                             <div className="tab-pane">
-                                <div className="w-full">
+                                <div className="w-full py-8">
                                     <Image
-                                        src={''}
+                                        src={card}
                                         alt="Physical Card Design"
-                                        width={24}
-                                        height={24}
+                                        width={350}
+                                        height={200}
                                     />
                                 </div>
                                 <div className="my-10">

@@ -62,7 +62,7 @@ const Page = () => {
                         id="gid"
                         name="gid"
                         onChange={handleGidChange}
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5   dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                     >
                         <option value="">Choose a country</option>
                         <option value="NIN">NIN</option>
@@ -74,7 +74,7 @@ const Page = () => {
                         <div className="my-7">
                             <label
                                 htmlFor="id"
-                                className="block mb-2 font-medium text-gray-900 text-left text-md dark:text-white"
+                                className="block mb-2 font-medium text-gray-900 text-left text-md"
                             >
                                 ID Number
                             </label>
@@ -82,7 +82,7 @@ const Page = () => {
                                 type="text"
                                 id="id"
                                 name="id"
-                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5   dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                 placeholder="Enter your NIN ID number"
                                 required
                             />
@@ -90,7 +90,7 @@ const Page = () => {
                         <div className="my-7">
                             <label
                                 htmlFor="pofid"
-                                className="block mb-2 font-medium text-gray-900 text-left text-md dark:text-white"
+                                className="block mb-2 font-medium text-gray-900 text-left text-md"
                             >
                                 Proof of ID
                             </label>
@@ -129,7 +129,7 @@ const Page = () => {
                                     type="text"
                                     id="pofid"
                                     name="pofid"
-                                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5   dark:focus:ring-blue-500 dark:focus:border-blue-500 pl-10"
+                                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 pl-10"
                                     placeholder="Upload a copy of your document"
                                     required
                                 />
@@ -138,7 +138,7 @@ const Page = () => {
                         <div className="my-7">
                             <label
                                 htmlFor="country"
-                                className="block mb-2 font-medium text-gray-900 text-left text-md dark:text-white"
+                                className="block mb-2 font-medium text-gray-900 text-left text-md"
                             >
                                 Country short code
                             </label>
@@ -146,7 +146,7 @@ const Page = () => {
                                 type="text"
                                 id="country"
                                 name="country"
-                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5   dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                 placeholder="e.g NG, GH, US"
                                 required
                             />
@@ -154,7 +154,7 @@ const Page = () => {
                         <div className="w-full my-7">
                             <button
                                 onClick={openModal}
-                                className="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                className="text-white bg-[#632FD9] focus:ring-4 focus:outline-none  font-medium text-sm w-full px-5 py-2.5 text-center"
                             >
                                 Upgrade Account
                             </button>

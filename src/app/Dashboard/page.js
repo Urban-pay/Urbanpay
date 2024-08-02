@@ -12,11 +12,11 @@ const Page = () => {
                     Dive yourself into a versatile app that excels in efficient transactions and beyond
                 </p>
             </div>
-            <div className='flex flex-col space-y-3 w-full max-w-xs'>
-                <button className="w-full py-2 bg-[#632FD9] text-white rounded">
+            <div className='flex flex-col space-y-3'>
+                <button className="md:w-full px-5 py-2 bg-[#632FD9] text-white rounded">
                     <Link href="/Dashboard/CreateAccount" className="block">Get Started</Link>
                 </button>
-                <button className="w-full py-2 border border-[#632FD9] text-[#632FD9] rounded">
+                <button className="md:w-full px-5 py-2 border border-[#632FD9] text-[#632FD9] rounded">
                     <Link href="/Dashboard/Login" className="block">Get Login</Link>
                 </button>
             </div>
