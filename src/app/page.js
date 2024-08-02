@@ -36,7 +36,7 @@ const Hero = () => {
             </h1>
             <p className='font-medium text-xl my-4 md:p-4'>Welcome to a borderless payment future where simplicity and global connectivity are just a click away </p>
 
-            <div className="flex flex-col space-y-3 md:flex-row  justify-center items-center md:space-x-4 mt-5">
+            <div className="flex flex-col space-y-3 md:flex-row md:space-x-4 md:space-y-0 mt-5 justify-center items-center">
               <button className="h-10 border-2 border-[#66A966] shadow-lg text-slate-800 flex items-center justify-center px-3 py-8">
                 <Image src={playstore} width={40} height={40} alt='playstore' />
                 <p className='ml-3'>

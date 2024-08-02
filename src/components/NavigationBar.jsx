@@ -34,7 +34,7 @@ const Page = () => {
             />
           </motion.div>
         </Link>
-        <span className="lg:text-lg md:text-sm hidden md:block font-bold leading-6 text-gray-900">
+        <span className="lg:text-lg  md:text-sm hidden md:block font-bold leading-6 text-gray-900">
           URBAN PAY
         </span>
       </div>
@@ -67,10 +67,10 @@ const Page = () => {
         </ul>
       </div>
 
-      <div className="hidden md:flex  items-center space-x-4">
+      <div className="flex  items-center space-x-4">
         <Link href="/">
           <motion.span
-            className="lg:text-lg md:text-sm rounded font-bold py-2 px-4 text-gray-900"
+            className="lg:text-lg hidden md:block md:text-sm rounded font-bold py-2 px-4 text-gray-900"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -82,7 +82,7 @@ const Page = () => {
         </Link>
         <Link href="/">
           <motion.button
-            className="bg-purple-600 text-white font-bold py-2 px-4 rounded"
+            className="bg-purple-600 hidden md:block text-white font-bold py-2 md:px-2 lg:px-4 rounded"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}

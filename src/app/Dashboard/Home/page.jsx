@@ -360,7 +360,7 @@ const Page = () => {
                 </div>
               </div>
 
-              <div className="relative flex flex-col items-center gap-[15px]">
+              <div className="relative flex flex-col items-center gap-[15px] mt-10">
                 <svg
                   className="relative flex-0"
                   width="96"
