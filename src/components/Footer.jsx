@@ -59,65 +59,28 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-1 my-2 text-center space-y-4">
-          <h2
-            href="#"
-            className="font-bold display-5 text-2xl text-[#7217AA] mb-5 "
-          >
-            Product
-          </h2>
-          <Link href="#" className="">
-            Transfer Money
-          </Link>
-          <Link href="#" className="">
-            Transfer Pricing
-          </Link>
-          <Link href="#" className="">
-            Virtual Cards
-          </Link>
-          <Link href="#" className="">
-            Currency Exchange
-          </Link>
-        </div>
-        <div className="grid my-2 text-center space-y-4">
-          <h2
-            href="#"
-            className=" font-bold display-5 text-2xl text-[#7217AA] mb-5"
-          >
-            Company
-          </h2>
-          <Link href="#" className="">
-            Contact
-          </Link>
-          <Link href="#" className="">
-            Careers
-          </Link>
-          <Link href="#" className="">
-            About
-          </Link>
-          <Link href="#" className="">
-            Blog
-          </Link>
-        </div>
-        <div className="grid my-2 text-center space-y-4">
-          <h2
-            href="#"
-            className=" font-bold display-5 text-2xl text-[#7217AA] mb-5 "
-          >
-            Connect
-          </h2>
-          <Link href="#" className="">
-            Twitter
-          </Link>
-          <Link href="#" className="">
-            Instagram
-          </Link>
-          <Link href="#" className="">
-            Linkedin
-          </Link>
-          <Link href="#" className="">
-            Facebook
-          </Link>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex flex-col my-2 text-center space-y-4">
+            <h2 className="font-bold text-2xl text-[#7217AA] mb-5">Product</h2>
+            <Link href="#">Transfer Money</Link>
+            <Link href="#">Transfer Pricing</Link>
+            <Link href="#">Virtual Cards</Link>
+            <Link href="#">Currency Exchange</Link>
+          </div>
+          <div className="flex flex-col my-2 text-center space-y-4">
+            <h2 className="font-bold text-2xl text-[#7217AA] mb-5">Company</h2>
+            <Link href="#">Contact</Link>
+            <Link href="#">Careers</Link>
+            <Link href="#">About</Link>
+            <Link href="#">Blog</Link>
+          </div>
+          <div className="flex flex-col my-2 text-center space-y-4">
+            <h2 className="font-bold text-2xl text-[#7217AA] mb-5">Connect</h2>
+            <Link href="#">Twitter</Link>
+            <Link href="#">Instagram</Link>
+            <Link href="#">LinkedIn</Link>
+            <Link href="#">Facebook</Link>
+          </div>
         </div>
       </div>
       <div className="container mx-auto my-10 md:p-4">
