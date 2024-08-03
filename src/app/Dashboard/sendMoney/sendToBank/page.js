@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 const Page = () => {
 
-    const router = useRouter()
+    const router = useRouter();
 
     const [isChecked, setIsChecked] = useState(true);
 
@@ -13,7 +13,13 @@ const Page = () => {
         setIsChecked(!isChecked);
     };
 
-    const [activeTab, setActiveTab] = useState('NewTransfer')
+    const [activeTab, setActiveTab] = useState('NewTransfer');
+
+    const [openEye, setOpenEye] = useState(true);
+
+    const toggleEye = () => {
+        setOpenEye((prevState) => !prevState)
+    }
 
     return (
         <div
@@ -86,9 +92,9 @@ const Page = () => {
                                                     </defs>
                                                 </svg>
                                             </span>
-                                            5,436.00
+                                            {openEye ? '5,436.00' : '******'}
                                         </span>
-                                        <span className="inline mt-2">
+                                        <span className="inline mt-2" onClick={toggleEye}>
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 width="17"
