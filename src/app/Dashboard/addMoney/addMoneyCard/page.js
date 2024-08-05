@@ -1,6 +1,8 @@
 "use client"
 import React, { useState } from 'react';
 import BackBtn from '../../../../components/BackBtn';
+import Link from 'next/link';
+
 
 const AddMoney = () => {
   const [tab, setTab] = useState('home');
@@ -133,12 +135,13 @@ const AddMoney = () => {
               </div>
 
               <div className="w-full my-7">
-                <button
-                  onClick={() => window.location.href = 'verify.html'}
-                  className="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  Next
-                </button>
+                <Link href="/Dashboard/addMoney/addMoneyCard/Verification">
+                  <button
+                    className="text-white bg-[#632FD9]  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full px-5 py-2.5 text-center "
+                  >
+                    Next
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

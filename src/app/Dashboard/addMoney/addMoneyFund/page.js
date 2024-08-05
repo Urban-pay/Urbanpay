@@ -4,7 +4,7 @@ import BackBtn from '../../../../components/BackBtn';
 
 
 const Page = () => {
-    
+
     const copyToClipboard = () => {
         const input = document.getElementById('acct');
         input.select();
@@ -12,7 +12,7 @@ const Page = () => {
     };
 
     return (
-        <div className="flex items-center justify-center h-screen text-center">
+        <div className="flex items-center justify-center  text-center">
             <div className="p-3 h-full w-[400px]">
                 <div>
                     <div className="flex justify-start pt-12 mb-12">
