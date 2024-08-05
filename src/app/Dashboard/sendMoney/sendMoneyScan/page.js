@@ -1,10 +1,11 @@
 
 import React from 'react';
 import BackBtn from '../../../../components/BackBtn';
+import Link from 'next/link';
 
 const Page = () => {
 
-    
+
     return (
         <div className=" flex items-center justify-center h-screen text-center">
             <div className="p-3" style={{ height: '100%', width: '400px' }}>
@@ -59,14 +60,14 @@ const Page = () => {
                         <div>
                             <button
                                 type="submit"
-                                className="text-white card-btn focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                className="text-white bg-[#632FD9] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full px-5 py-2.5 text-center"
                             >
-                                <a
-                                    href="sendToUrbanPayTag.html"
+                                <Link
+                                    href=""
                                     className="text-white no-underline capitalize"
                                 >
                                     Send money
-                                </a>
+                                </Link>
                             </button>
                         </div>
                     </div>
