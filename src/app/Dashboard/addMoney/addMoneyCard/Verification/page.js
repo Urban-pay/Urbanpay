@@ -50,7 +50,7 @@ const Page = () => {
                                 Continue
                             </button>
                             <p className="mt-10 text-sm text-center text-gray-500">
-                                Didn't receive a code?{" "}
+                                Didn&apos;t receive a code?{" "}
                                 <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
                                     Resend
                                 </a>
