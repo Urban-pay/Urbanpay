@@ -1,11 +1,10 @@
 "use client";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const BottomNav = () => {
-  const router = useRouter();
-  const currentPath = router.pathname;
+  const pathname = usePathname();
 
   return (
     <div
@@ -22,7 +21,7 @@ const BottomNav = () => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               className={`${
-                currentPath === "/Dashboard/Home"
+                pathname === "/Dashboard/Home"
                   ? "text-[#632FD9]"
                   : "text-[#606060]"
               }`}
@@ -54,7 +53,7 @@ const BottomNav = () => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               className={`${
-                currentPath === "/Dashboard/Card"
+                pathname === "/Dashboard/Card"
                   ? "text-[#632FD9]"
                   : "text-[#606060]"
               }`}
@@ -87,7 +86,7 @@ const BottomNav = () => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               className={`${
-                currentPath === "/Dashboard/Transactions"
+                pathname === "/Dashboard/Transactions"
                   ? "text-[#632FD9]"
                   : "text-[#606060]"
               }`}
@@ -119,7 +118,7 @@ const BottomNav = () => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               className={`${
-                currentPath === "/Dashboard/Settings"
+                pathname === "/Dashboard/Settings"
                   ? "text-[#632FD9]"
                   : "text-[#606060]"
               }`}
