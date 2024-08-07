@@ -4,19 +4,12 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import Image from "next/image";
-
-// Import the required Swiper modules
 import { Pagination } from "swiper/modules";
 
-// Import images
-import groceries from "../../public/groceries.png";
-import money from "../../public/money.png";
-import padlock from "../../public/padlock.png";
 
 const Carousel = () => {
   return (
-    <div className="w-full max-w-lg bg-transparent">
+    <div className="w-full max-w-lg">
       <Swiper
         modules={[Pagination]}
         spaceBetween={10}
@@ -24,12 +17,13 @@ const Carousel = () => {
         pagination={{ clickable: true }}
       >
         <SwiperSlide>
-          <div className="flex justify-center items-center h-full w-full rounded-full bg-[#F6F2FF] overflow-hidden">
+          <div className="flex justify-center items-center   overflow-hidden rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={210}
               height={195}
               fill="none"
+              className="max-w-full max-h-full"
             >
               <g filter="url(#a)">
                 <ellipse

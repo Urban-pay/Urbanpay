@@ -1,12 +1,24 @@
-import React from 'react';
+'use client'
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Carousel from '../../components/Carousel';
-// import groceries from '../../../public/groceries';
-// import money from '../../../public/money';
-// import padlock from '../../../public/padlock';
+import Loading from '../../components/Loading';
 
 
 const Page = () => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 2000);
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (loading) {
+        return <Loading />;
+    }
+
     return (
         <main className='min-h-screen flex flex-col justify-center items-center text-center'>
             <Carousel />
@@ -19,7 +31,7 @@ const Page = () => {
                 </p>
             </div>
             <div className='flex flex-col space-y-3'>
-                <button className="px-5 md:px-10 py-2 bg-[#632FD9] text-white rounded">
+                <button className="px-5  md:px-10 py-2 bg-[#632FD9] text-white rounded">
                     <Link href="/Dashboard/CreateAccount" className="block">Get Started</Link>
                 </button>
                 <button className="px-5 md:px-10 py-2 border border-[#632FD9] text-[#632FD9] rounded">
