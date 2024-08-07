@@ -18,20 +18,24 @@ const Page = () => {
 
                 <div className="space-y-6">
                     <ul className="flex justify-center w-full space-x-4 my-5">
-                        <li className="" role="presentation">
+                        <li className="flex items-center justify-center" role="presentation">
                             <button
-                                className={`nav-link ${activeTab === 'home' ? 'bg-[#E0D5F7] px-2 py-2 rounded-md' : 'text-gray-500'}`}
+                                className={`flex items-center justify-center ${activeTab === 'home' ? 'bg-[#E0D5F7] px-2 py-2 rounded-md' : 'text-gray-500'}`}
                                 onClick={() => setActiveTab('home')}
                             >
-                                Virtual Card
+                                <span>
+                                    Virtual Card
+                                </span>
                             </button>
                         </li>
-                        <li className="" role="presentation">
+                        <li className="flex items-center justify-center" role="presentation">
                             <button
-                                className={` ${activeTab === 'profile' ? 'bg-[#E0D5F7] px-2 py-2 rounded-md' : 'text-gray-500'}`}
+                                className={`flex items-center justify-center ${activeTab === 'profile' ? 'bg-[#E0D5F7] px-2 py-2 rounded-md' : 'text-gray-500'}`}
                                 onClick={() => setActiveTab('profile')}
                             >
-                                Physical Card
+                                <span>
+                                    Physical Card
+                                </span>
                             </button>
                         </li>
                     </ul>

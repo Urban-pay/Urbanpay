@@ -5,9 +5,6 @@ import UrbanPaylogo from "../../public/img/UrbanPaylogo.png";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
-// import home from "../../public/img/home.png";
-// import Contact from "../../public/img/contact.png";
-// import About from "../../public/img/about.png";
 
 const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
