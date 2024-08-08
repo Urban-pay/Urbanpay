@@ -39,7 +39,7 @@ const Page = () => {
         <ul className="flex justify-around">
           <Link href="/">
             <li
-              className="text-black hover:bg-customPurple hover:text-white hover:mx-1 hover:rounded-35px cursor-pointer font-medium md:text-[15px] lg:text-[18px]"
+              className="text-black  hover:text-white hover:mx-1 hover:rounded-35px cursor-pointer font-medium md:text-[15px] lg:text-[18px]"
               aria-label="Home"
             >
               Home
@@ -47,7 +47,7 @@ const Page = () => {
           </Link>
           <Link href="/About">
             <li
-              className="text-black hover:bg-customPurple hover:text-white hover:mx-1 hover:rounded-35px cursor-pointer font-medium md:text-[15px] lg:text-[18px]"
+              className="text-black  hover:text-white hover:mx-1 hover:rounded-35px cursor-pointer font-medium md:text-[15px] lg:text-[18px]"
               aria-label="About"
             >
               About
@@ -55,7 +55,7 @@ const Page = () => {
           </Link>
           <Link href="/ContactUs">
             <li
-              className="text-black hover:bg-customPurple hover:text-white hover:mx-1 hover:rounded-35px cursor-pointer font-medium md:text-[15px] lg:text-[18px]"
+              className="text-black  hover:text-white hover:mx-1 hover:rounded-35px cursor-pointer font-medium md:text-[15px] lg:text-[18px]"
               aria-label="Contact Us"
             >
               Contact Us

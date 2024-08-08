@@ -59,7 +59,7 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-3">
           <div className="flex flex-col my-2 text-center space-y-4">
             <h2 className="font-bold text-2xl text-[#7217AA] mb-5">Product</h2>
             <Link href="#">Transfer Money</Link>
