@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import BackBtn from '../../../../../components/BackBtn';
 
-const page = () => {
+const Page = () => {
     const [isCopied, setIsCopied] = useState(false);
 
     const handleCopyClick = () => {
@@ -108,4 +108,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

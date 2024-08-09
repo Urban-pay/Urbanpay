@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import BackBtn from '../../../../../components/BackBtn';
 
-const page = () => {
+const Page = () => {
     const [isCopied, setIsCopied] = useState(false);
 
     const handleCopyClick = () => {
@@ -14,7 +14,7 @@ const page = () => {
                 setIsCopied(true);
                 setTimeout(() => {
                     setIsCopied(false);
-                }, 2000); // Reset the state after 2 seconds
+                }, 2000);
             });
     };
 
@@ -113,4 +113,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
